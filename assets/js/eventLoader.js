@@ -2,10 +2,15 @@
 //  Joshua Baker
 
 //  Events Calendar
-const calendarId = ''; // something like 'sh9qvrc3c774rl92p65qbceig0@group.calendar.google.com';
+const calendarId = 'dbn5qatrubsu294seeuoos2ras@group.calendar.google.com';
 
 //  Created at console.developers.google.com by admin account.
-const apiKey = ''; // something like 'BIzaSyCDfhDvk1lDQTivXTdrMHPIEQgnXHxsAGk';
+//
+//  This key will only work if you access the events page from
+//  https://aisutd.org or
+//  http://localhost:4000
+const apiKey = 'AIzaSyCxvHNa2wSogxrdGwvE7IBCT_chaB_Xpig';
+
 
 
 //  Uses the calendarId and apiKey to download a list of all upcoming events.
