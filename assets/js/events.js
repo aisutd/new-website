@@ -19,7 +19,7 @@ async function init() {
 
     let fragment = await eventsFragment;
 
-    container.empty();
+    container.innerHTML = '';
     container.append(fragment);
 
     console.log('Events loaded.');
@@ -30,12 +30,12 @@ function createEventDiv(event) {
 
     div.className = 'event';
     div.innerHTML = 
-        `What: ${event.summary}<br>` +
-        `When: ${event.start}<br>` +
-        `Where: ${event.location}<br>` +
+        `<b>What</b>: ${event.summary}<br>` +
+        `<b>When</b>: ${event.start.dateTime}<br>` +
+        `<b>Where</b>: ${event.location || '&lt;No location specified&gt;'}<br>` +
         `<br>` +
-        `Description:<br>` +
-        `${event.description}`
+        `<b>Description</b>:<br>` +
+        `${event.description || '&lt;No description&gt;'}<br><br><hr style='color: white'>`
         ;
 
     return div;
