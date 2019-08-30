@@ -19,8 +19,7 @@ permalink: /team
 
       <!-- officerList[j] is the JSON file, officerList[j][0] is the JSON file name, and officerList[j][1] is the JSON data -->
       {% if officerList[j][1].index == i %}
-      <div class="officer-col-fix col-md-3 col-sm-6 col-xs-12 officer-col-height">
-
+      <div class="officer-cell">
         <div class="officer-image-div">
           {% if officerList[j][1].link == "" %}
           <img class="officer-image" alt="{{ officerList[j][1].name }}" src="{{ officerList[j][1].photo }}" />
@@ -70,8 +69,7 @@ permalink: /team
 
       <!-- officerList[j] is the JSON file, officerList[j][0] is the JSON file name, and officerList[j][1] is the JSON data -->
       {% if officerList[j][1].index == i %}
-      <div class="officer-col-fix col-md-3 col-sm-6 col-xs-12 officer-col-height">
-
+      <div class="officer-cell">
         <div class="officer-image-div">
           {% if officerList[j][1].link == "" %}
           <img class="officer-image" alt="{{ officerList[j][1].name }}" src="{{ officerList[j][1].photo }}" />
@@ -91,7 +89,9 @@ permalink: /team
           <p><i>{{ officerList[j][1].role }}</i></p>
         </div>
 
-        <p>{{ officerList[j][1].bio }}</p>
+        <div class="officer-bio">
+          <p>{{ officerList[j][1].bio }}</p>
+        </div>
       </div>
 
       {% break %}

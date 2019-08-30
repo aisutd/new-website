@@ -6,6 +6,11 @@
     width: 100%;
 }
 
+#officer-table > .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .officer-image-div {
     margin: 2px auto;
 
@@ -15,7 +20,6 @@
 }
 
 .officer-image {
-
     width: 200px;
     height: 200px;
     position: relative;
@@ -41,44 +45,11 @@
 }
 
 .officer-bio {
-  padding-bottom: 100px;
+  padding-bottom: 40px;
 }
 
-// Manual grid breakpoint adjustments
-
-@media screen and (min-width: $screen-md-min) {
-    .officer-col-height {
-        height: 800px;
-    }
-}
-
-@media screen and (min-width: $screen-md-min) and (max-width: $x-large) {
-    .officer-col-fix {
-        @include make-sm-column(6, 30px);
-    }
-}
-
-@media screen and (min-width: 880px) and (max-width: $screen-sm-max) {
-    .officer-col-height {
-        height: 700px;
-    }
-}
-
-@media screen and (min-width: 850px) and (max-width: 880px) {
-    .officer-col-height {
-        height: 730px;
-    }
-}
-
-@media screen and (min-width: 810px) and (max-width: 850px) {
-    .officer-col-height {
-        height: 760px;
-    }
-}
-
-
-@media screen and (min-width: $screen-xs-max) and (max-width: 810px) {
-    .officer-col-fix {
-        @include make-sm-column(12, 30px);
-    }
+.officer-cell {
+    flex-basis: 280px;
+    flex-grow: 1;
+    margin: 12px;
 }
