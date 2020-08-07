@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import InputAdornment from "@material-ui/core/InputAdornment";
@@ -23,7 +23,14 @@ import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
 import image from "assets/img/bg7.jpg";
 
+import {signInWithGoogle} from '../../firebase'
+import UserProvider from "providers/UserProvider";
+import { UserContext } from "../../providers/UserProvider";
+
+import history from '../../history'
+
 const useStyles = makeStyles(styles);
+
 
 export default function LoginPage(props) {
   const [cardAnimaton, setCardAnimation] = React.useState("cardHidden");
@@ -80,8 +87,11 @@ export default function LoginPage(props) {
                         href="#pablo"
                         target="_blank"
                         color="transparent"
-                        onClick={e => e.preventDefault()}
-                      >
+                        onClick = {function() { 
+                            signInWithGoogle();
+                            history.push('/profile-page')
+                          }
+                        }>
                         <i className={"fab fa-google-plus-g"} />
                       </Button>
                     </div>

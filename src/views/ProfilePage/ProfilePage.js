@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -32,9 +32,19 @@ import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
-const useStyles = makeStyles(styles);
+import { UserContext } from "../../providers/UserProvider";
+import {auth} from "../../firebase";
+import history from '../../history'
 
 export default function ProfilePage(props) {
+  const useStyles = makeStyles(styles);
+  const user = useContext(UserContext);
+  let displayName = "";
+  let email = "";
+  if(user) {
+    displayName = user.displayName;
+    email = user.email;
+  }
   const classes = useStyles();
   const { ...rest } = props;
   const imageClasses = classNames(
@@ -67,8 +77,8 @@ export default function ProfilePage(props) {
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Christian Louboutin</h3>
-                    <h6>DESIGNER</h6>
+                    <h3 className={classes.title}>{ displayName }</h3>
+                    <h6>{ email }</h6>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-twitter"} />
                     </Button>
@@ -83,6 +93,14 @@ export default function ProfilePage(props) {
               </GridItem>
             </GridContainer>
             <div className={classes.description}>
+              <Button
+                onClick={function() {
+                  auth.signOut();
+                  history.push('/login-page');
+                }}
+              >
+                <h5>Sign Out</h5>
+              </Button>
               <p>
                 An artist of considerable range, Chet Faker — the name taken by
                 Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
