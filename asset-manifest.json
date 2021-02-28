@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.7828ff43.chunk.css",
-    "main.js": "/static/js/main.6b952c01.chunk.js",
-    "main.js.map": "/static/js/main.6b952c01.chunk.js.map",
+    "main.js": "/static/js/main.00d698a3.chunk.js",
+    "main.js.map": "/static/js/main.00d698a3.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.2bab345f.js",
     "runtime~main.js.map": "/static/js/runtime~main.2bab345f.js.map",
     "static/js/2.6b32416f.chunk.js": "/static/js/2.6b32416f.chunk.js",
     "static/js/2.6b32416f.chunk.js.map": "/static/js/2.6b32416f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d72a81765cf6c1ca954bb26473688cb2.js": "/precache-manifest.d72a81765cf6c1ca954bb26473688cb2.js",
+    "precache-manifest.f2aeb75d5947fc3b4aae645e3f3d07f9.js": "/precache-manifest.f2aeb75d5947fc3b4aae645e3f3d07f9.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.7828ff43.chunk.css.map": "/static/css/main.7828ff43.chunk.css.map",
     "static/media/Kickoff.jpg": "/static/media/Kickoff.f0c5da22.jpg",
