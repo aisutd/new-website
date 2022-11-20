@@ -9,7 +9,12 @@ This repository assumes you already have Node.js and NPM installed. If have not
 installed those in your development environment, [install](https://nodejs.dev/)
 before proceeding.
 
-To start the local development server, clone the repository and run:
+To import the necessary libraries, clone the repository and run:
+```shell script
+npm i --force
+```
+
+To start the local development server, run:
 ```shell script
 npm run dev
 ```
