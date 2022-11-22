@@ -48,7 +48,7 @@ export default function SiteHeader() {
                 fontFamily="montserrat"
                 fontWeight="bold"
               >
-                Projects
+                <Link href="/projects">Projects</Link>
               </Typography>
             </Button>
             <Button sx={{color: "black", textTransform: "none"}}> 
@@ -58,7 +58,7 @@ export default function SiteHeader() {
                 fontFamily="montserrat"
                 fontWeight="bold"
               >
-                Team
+                <Link href="/team">Team</Link>
               </Typography>
             </Button>
             <Button sx={{color: "black", textTransform: "none"}}> 
@@ -68,7 +68,7 @@ export default function SiteHeader() {
                 fontFamily="montserrat"
                 fontWeight="bold"
               >
-                About
+                <Link href="/about">About</Link>
               </Typography>
             </Button>
             <Button sx={{color: "black", textTransform: "none"}}> 
@@ -78,14 +78,14 @@ export default function SiteHeader() {
                 fontFamily="montserrat"
                 fontWeight="bold"
               >
-                Join
+                <Link href="/join">Join</Link>
               </Typography>
             </Button>
-            <IconButton onClick={() => {window.open("/insta", "_blank")}}>
-              <InstagramIcon className='h-6 text-ais-black'/>
-            </IconButton>
             <IconButton onClick={() => {window.open("/fb", "_blank")}}>
               <FacebookIcon className='h-6 text-ais-black'/>
+            </IconButton>
+            <IconButton onClick={() => {window.open("/insta", "_blank")}}>
+              <InstagramIcon className='h-6 text-ais-black'/>
             </IconButton>
             <IconButton onClick={() => {window.open("/linkedin", "_blank")}}>
               <LinkedInIcon className='h-6 text-ais-black'/>

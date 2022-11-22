@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Officer } from '../../../../org-site/lib/types';
-import { Email, GitHub, LinkedIn, Language, FormatQuote } from '@material-ui/icons';
+import { Email, GitHub, LinkedIn, Language, FormatQuote } from '@mui/icons-material';
 import Link from 'next/link';
 
 interface OfficerItemProps {
@@ -124,7 +124,7 @@ function personalQuote(officer: Officer) {
  */
 export default function OfficerItem({ officer }: OfficerItemProps) {
   const { name, title } = officer;
-  let directorAtt;
+  let directorAtt: string;
   if (title.includes('Director') || title.includes('President') || title.includes('Founder'))
     directorAtt = ' order-first ';
   else if (title.includes('VP')) directorAtt = ' order-1 ';
