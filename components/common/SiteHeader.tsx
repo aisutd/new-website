@@ -20,7 +20,7 @@ export default function SiteHeader() {
   return (
     <AppBar sx={{backgroundColor: "white", opacity: 0.6}}>
         <Toolbar sx={{width: {md: "100%", lg: "90%", xl: "80%"}}} className='mx-auto max-w-6xl'>
-          <img src="/ais_light.svg" className="h-8 mr-2" />
+          <Link href="/"><img src="/ais_light.svg" className="h-8 mr-2" /></Link>
           <Typography
             className="text-xl"
             color="black"
@@ -28,7 +28,7 @@ export default function SiteHeader() {
             fontWeight="bold"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            Artificial Intelligence Society
+            <Link href="/">Artificial Intelligence Society</Link>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'none', md: "flex" } }}>
             <Button sx={{color: "black", textTransform: "none"}}> 
