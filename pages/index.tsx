@@ -84,7 +84,7 @@ export default function HomePage() {
                   <img src="/hackai-3.jpg" className="rounded-t-md" />
                   <div className="text-white text-3xl font-semibold px-4 py-4">HackAI</div>
                   <div className="font-light text-white text-l px-4 ">
-                    The largest AI hackathon in North Texas.
+                    The largest AI hackathon in North Texas. 
                   </div>
                   <div className="underline text-sm text-white px-4 py-2 rounded-b-md">
                     <Link href="https://hackai.org/">Learn More</Link>
