@@ -23,12 +23,9 @@ export default function ProjectsPage({ demos }: DemoPageProps) {
           content="An overview of all our AI/ML projects, including explanations and interactive demos."
         />
       </Head>
-      {/* 1.add background gradient color 
-          2. create coming soon box/div and add shadow
-          3. insert cube and rectangle images*/}
       <main className="flex flex-col justify-center min-h-screen bg-gradient-to-r from-blue-300 to-blue-200">
         <div className="text-center font-bold w-9/12 h-full p-10 rounded-3xl shadow-lg shadow-slate-500 m-auto mt-auto">
-          <p className="text-center pt-10 h-9/12 leading-10 text-3xl">Comming Soon</p>
+          <p className="text-center pt-10 h-9/12 leading-10 text-3xl">Coming Soon</p>
           <img
             src="images/RoundCube-Blue-Glossy.png"
             className="w-30 float-right translate-x-20 translate-y-20 opacity-80"
