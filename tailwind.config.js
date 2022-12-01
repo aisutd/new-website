@@ -10,6 +10,7 @@ module.exports = {
           'dark-blue': '#4565B8',
           'light-gray': '#f5f5f5',
           'dark-gray': '#444444',
+          navy: '#1A1A34',
           white: '#fafafa',
         },
       },
@@ -24,6 +25,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['IBM Plex Sans', 'sans-serif'],
+      cairo: ['Cairo', 'sans-serif']
     },
   },
   variants: {

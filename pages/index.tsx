@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Subscribe from '../components/join/Subscribe';
 import KickoffModal from '../components/events/KickoffModal';
+import * as React from 'react';
+import Button from '@mui/material/Button';
 
 /**
  * The root page for the organization website.
@@ -21,21 +23,48 @@ export default function HomePage() {
           content="Welcome to the Artificial Intelligence Society at UTD. We make AI understandable and accessible to everyone"
         />
       </Head>
-      <main className="min-h-screen bg-ais-light-gray">
-        <section id="intro" className="bg-ais-black">
-          <div className="container mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-10 sm:py-20 md:py-30 lg:py-40">
-            <div className=" text-white text-5xl font-semibold mx-sm-auto p-2 p-sm-3 p-md-5">
-              We are the Artificial Intelligence Society.
+      <main className="min-h-screen bg-ais-white">
+        <section id="intro" className="h-[40rem] mb-20">
+          <div className="bg-[url('/bg_rec.svg')] bg-no-repeat bg-cover h-[40rem] w-full flex">
+            <div className="grid grid-cols-2 self-center py-20">
+              <div className="container mx-auto text-center">
+                <div className="font-[1000] font-cairo">
+                  <span className="text-ais-navy text-5xl mx-sm-auto p-2 p-sm-3 p-md-5">
+                    we are the
+                  </span>
+                  <span className="text-black text-7xl tracking-widest mx-sm-auto p-2 p-sm-3 p-md-5">
+                    AIS
+                  </span>
+                </div>
+                <div className="text-ais-dark-gray font-cairo text-2xl font-thin py-5 px-10 m-2">
+                  Student led organization at The University of Texas at Dallas. Discussions, events, and competitions related to artificial intelligence.
+                </div>
+                <div className="pt-16">
+                  <Button variant="contained" size="large" className="bg-[#24314D] hover:bg-slate-400 h-[4rem] w-[14rem] rounded-2xl">
+                    <Link href="/join" className="font-[Hind Siliguri] font-bold text-white text-base tracking-wide">Join us now</Link>
+                  </Button>
+                </div>
+              </div>
             </div>
-            <div className="text-white text-2xl font-thin py-5 m-2">
-              Our mission: make AI understandable and accessible to everyone.
+          </div>
+          <div className="absolute top-0 right-0">
+            <img src="ellipse.svg" className="h-[44rem] z-10"></img>
+          </div>
+          <div className="absolute top-[6rem] right-[6rem]">
+            <img src="start_animation.svg" className="h-[36rem] z-0"></img>
+          </div>
+        </section>
+        <section id="who-we-are" className="bg-ais-white pb-5 mb-5">
+          <div className="h-[10rem] grid grid-cols-3 font-[Hind Siliguri] text-ais-navy">
+            <div className="self-center text-center font-bold text-3xl px-10 ml-20">
+              Who we are
             </div>
-            <div className="text-white font-bold underline m-2">
-              <Link href="/join">Join us.</Link>
+            <div className="col-span-2 self-center text-center font-semibold text-2xl px-10 mx-10">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
           </div>
         </section>
-        <section id="about" className="bg-ais-blue-gray">
+        <section id="what-is-happening" className="bg-ais-white">
           <div className="mx-auto max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-20 md:py-40 grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12">
             <div className="mx-5">
               <div className="text-4xl font-medium">Projects</div>
@@ -71,7 +100,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        <section id="programs" className="">
+        <section id="events" className="">
           <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl bg-transparent">
             <div className="bg-ais-white -mt-10 rounded-lg px-10 py-5 shadow-2xl">
               <div className="text-4xl font-medium">Events</div>
