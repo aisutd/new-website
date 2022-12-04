@@ -23,6 +23,7 @@
     "coda-js": "^4.0.1",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.4",
+    "force": "^0.0.3",
     "moment": "^2.29.4",
     "next": "13.0.4",
     "react": "18.2.0",
