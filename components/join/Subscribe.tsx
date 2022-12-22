@@ -78,9 +78,9 @@ export default function Subscribe() {
         <div className="flex flex-wrap gap-4 items-center mt-4 justify-between">
           <button
             type="submit"
-            className="transition duration-400 ease-in-out bg-blue-400 hover:bg-ais-dark-blue rounded-full text-white font-semibold"
+            className="transition duration-400 ease-in-out bg-ais-indigo hover:bg-ais-dark-blue rounded-full text-white font-semibold"
           >
-            <div className="py-4 px-8">Sign Up</div>
+            <div className="py-4 px-8">Subscribe</div>
           </button>
 
           <div className="text-md py-4 text-red-600">{message ? message : null}</div>
