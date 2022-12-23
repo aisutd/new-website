@@ -50,18 +50,18 @@ export default function Subscribe() {
   };
 
   return (
-    <div className="max-w-2xl mr-auto">
+    <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl">
 
-      <div className="pl-80 ml-40 items-center justify-center">
+      <div className="items-center justify-center md:mr-40">
         <button  onClick={() => setOpenSubscribeModal(true)} className="shadow-md hover:shadow-2xl transition duration-400 ease-in-out bg-ais-indigo hover:bg-ais-hover-indigo rounded-lg text-white font-semibold w-48 h-11">
-          <div className=" px-5 text-sm">Subscribe</div>
+          <div className="px-5 text-sm">Subscribe</div>
         </button>   
       </div>
 
       {openSubscribeModal &&
-        <div className="rounded-lg px-4 fixed inset-0 h-128 w-128 m-auto flex items-center justify-center bg-[url('../../public/modalbg.png')] bg-cover bg-center">
+        <div className="rounded-lg px-4 fixed inset-0 h-96 md:h-128 w-96 md:w-128 m-auto flex items-center justify-center bg-[url('../../public/modalbg.png')] bg-cover bg-center">
           <button className="absolute right-2 top-2">
-            <HighlightOffIcon fontSize="medium" onClick={() => setOpenSubscribeModal(false)}/>
+            <HighlightOffIcon fontSize="large" onClick={() => setOpenSubscribeModal(false)}/>
           </button>
           <div className="relative">
             <form onSubmit={subscribe}>
@@ -75,7 +75,7 @@ export default function Subscribe() {
                   ref={inputFName}
                   required
                   type="fname"
-                  className="bg-white bg-opacity-60 border-black border-2 h-9 w-44 py-4 px-8 rounded-lg transition duration-400 hover:bg-ais-light-gray"
+                  className="bg-white bg-opacity-60 border-black border-2 h-9 w-auto md:w-44 py-4 px-8 rounded-lg transition duration-400 hover:bg-ais-light-gray"
                 />
                 <input
                   id="last-name-input"
@@ -84,7 +84,7 @@ export default function Subscribe() {
                   ref={inputLName}
                   required
                   type="lname"
-                  className="bg-white bg-opacity-60 border-black border-2 h-9 w-44 py-4 px-8 rounded-lg transition duration-400 hover:bg-ais-light-gray"
+                  className="bg-white bg-opacity-60 border-black border-2 h-9 w-auto md:w-44 py-4 px-8 rounded-lg transition duration-400 hover:bg-ais-light-gray"
                 />
                 <input
                   id="email-input"
@@ -112,9 +112,9 @@ export default function Subscribe() {
         </div>
         }
         {openSuccessModal &&
-        <div className="rounded-lg px-4 fixed inset-0 h-128 w-128 m-auto flex items-center justify-center bg-[url('../../public/modalbg.png')] bg-cover bg-center">
+        <div className="rounded-lg px-4 fixed inset-0 h-96 md:h-128 w-96 md:w-128 m-auto flex items-center justify-center bg-[url('../../public/modalbg.png')] bg-cover bg-center">
           <button className="absolute right-2 top-2">
-            <HighlightOffIcon fontSize="medium" onClick={() => setOpenSuccessModal(false)}/>
+            <HighlightOffIcon fontSize="large" onClick={() => setOpenSuccessModal(false)}/>
           </button>
           <div className="relative">
             <div className="text-lg font-bold pt-8"> HELLO THERE, </div>
