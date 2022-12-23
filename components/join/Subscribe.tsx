@@ -46,11 +46,12 @@ export default function Subscribe() {
 
   return (
     <div className="max-w-2xl mr-auto">
-      <button
-            className="transition duration-400 ease-in-out bg-ais-indigo hover:bg-ais-dark-blue rounded-lg text-white font-semibold items-center justify-center w-48"
-          >
-            <div className="py-4 px-8" onClick={() => setOpenSubscribeModal(true)}>Subscribe</div>
-          </button>
+
+      <div className="pl-80 ml-40 items-center justify-center">
+        <button  onClick={() => setOpenSubscribeModal(true)} className="shadow-md hover:shadow-2xl transition duration-400 ease-in-out bg-ais-indigo hover:bg-ais-hover-indigo rounded-lg text-white font-semibold items-center justify-center w-48 h-11">
+          <div className=" px-5 text-sm">Subscribe</div>
+        </button>   
+      </div>
 
       {openSubscribeModal &&
         <div className="px-4 fixed inset-0 h-128 w-128 m-auto flex items-center justify-center bg-[url('../../public/modalbg.png')] bg-cover bg-center">
@@ -91,12 +92,12 @@ export default function Subscribe() {
                 />
               </div>
               
-              <div className="flex flex-wrap gap-4 items-center mt-4 justify-between">
+              <div className="flex flex-wrap justify-centerflex flex-wrap gap-4 items-center mt-4 justify-between">
                 <button
                   type="submit"
                   className="w-48 transition duration-400 ease-in-out hover:bg-ais-dark-blue rounded-lg text-white font-semibold bg-[url('../../public/btnbg.png')] bg-cover"
                 >
-                  <div className="py-4 px-8" >Subscribe</div>
+                  <div className="py-2 px-8 justify-center">Subscribe</div>
                 </button>
                 <div className="text-md py-4 text-red-600">{message ? message : null}</div>
                 <div className="text-xs py-4">By entering your email address , you agree to recieve emails about our upcoming events.</div>

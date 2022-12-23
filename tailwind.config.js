@@ -17,6 +17,7 @@ module.exports = {
           'light-gray': '#f5f5f5',
           'dark-gray': '#444444',
           'indigo': '#24314D',
+          'hover-indigo': '#374b75',
           white: '#fafafa',
         },
       },
