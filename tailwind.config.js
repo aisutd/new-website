@@ -2,6 +2,12 @@ module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      width: {
+        '128': '460px',
+      },
+      height: {
+        '128': '400px',
+      },
       colors: {
         ais: {
           black: '#1F1E1E',

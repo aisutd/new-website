@@ -133,15 +133,15 @@ export default function JoinPage() {
           </div>
         </section>
         <section className="h-auto bg-[url('../../public/background.png')] bg-cover bg-center w-full">
-          <div className="relative mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-2">
+          <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-2">
             <div className="text-2xl font-bold text-center"><DescriptionIcon className="text-5xl pb-2"/>Applications</div>
             <div>{appDivs}</div>
-            <img className="absolute bottom-0" src="/supertoroid.png" alt="supertoroid" width="150"/>
+            <img className="w-30 float-right translate-x-20 translate-y-20 opacity-80 invisible lg:visible" src="/supertoroid.png" alt="supertoroid" width="150"/>
           </div>
-          <div className="relative mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-20 text-center justify-center items-center">
+          <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-20 text-center justify-center items-center content-center">
             <div className="text-3xl font-bold">Want to get involved?</div>
-            <img className="absolute right-0" src="/cube.png" alt="cube" width="170"/>
-            <div className="text-lg pt-2 pb-4">
+            <img className="w-30 float-left -translate-x-3/4 -translate-y-12 opacity-90 invisible lg:visible" src="/cube.png" alt="cube" width="170"/>
+            <div className="text-lg pt-2 pb-4 text-center justify-center items-center content-center">
               Join our mailing list to get email reminders about our upcoming events
             </div>
             <div className="justify-center items-center content-center">
