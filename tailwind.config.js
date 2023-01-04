@@ -24,6 +24,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['IBM Plex Sans', 'sans-serif'],
+      hind: ['Hind Siliguri'],
     },
   },
   variants: {
