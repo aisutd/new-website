@@ -19,6 +19,8 @@ module.exports = {
           'indigo': '#24314D',
           'hover-indigo': '#374b75',
           white: '#fafafa',
+          navy: '#202042',
+          gray: '#B8B8B8',
         },
       },
       scale: {
@@ -32,7 +34,8 @@ module.exports = {
     },
     fontFamily: {
       sans: ['IBM Plex Sans', 'sans-serif'],
-      hind: ['Hind Siliguri'],
+      cairo: ['Cairo', 'sans-serif'],
+      hind: ['Hind Siliguri']
     },
   },
   variants: {
