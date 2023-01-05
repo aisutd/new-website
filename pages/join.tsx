@@ -118,7 +118,7 @@ export default function JoinPage() {
           content="Get involved in AIS by joining our mailing list and applying to our various programs."
         />
       </Head>
-      <main className="min-h-screen pt-8">
+      <main className="min-h-screen">
         <section className="h-64 bg-cover bg-center w-full bg-[url('../../public/top.png')] text-center">
           {/* Hero */}
           <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-8 px-2 text-white">
