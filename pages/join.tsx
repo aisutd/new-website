@@ -13,20 +13,20 @@ import DescriptionIcon from '@mui/icons-material/Description';
 export default function JoinPage() {
   const appDivs = (
     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 items-start gap-2 pt-8 pb-20 px-8">
-      <div className="rounded-3xl h-80 bg-white bg-opacity-60 border-white border-2	rounded-md shadow-md text-center py-8 px-2 mx-4">
+      <div className="rounded-3xl h-80 bg-white bg-opacity-60 border-white border-2	shadow-md text-center py-8 px-2 xl:mx-1 2xl:mx-3">
         <div className="text-ais-indigo text-xl font-semibold px-4 pt-4">AI Mentorship</div>
         <div className="leading-loose font-light text-stone-700 text-sm px-4 py-4">
           Apply as a mentee and get a chance to learn foundational concepts in ML and to work on AI
           projects of your interest, guided by experienced mentors.
         </div>
-        <div className="flex flex-wrap justify-center underline text-md text-ais-indigo md:pt-6 gap-4 px-4">
+        <div className="flex flex-wrap justify-center underline text-md text-ais-indigo md:pt-6 xl:pt-2 2xl:pt-6 gap-4 px-4">
           <div className="">
             <a
               target="_blank"
               href="https://coda.io/form/AIM-Mentee-Application_ddszWO_e7r4"
               rel="noreferrer"
             >
-              <button className="hover:shadow-lg border-ais-indigo border-2 bg-ais-indigo text-white font-bold py-2 rounded-xl text-xs w-24 md:w-28">
+              <button className="hover:shadow-lg border-ais-indigo border-2 bg-ais-indigo text-white font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
                 Apply
               </button>
             </a>
@@ -37,27 +37,27 @@ export default function JoinPage() {
               href="https://docs.google.com/document/d/1i4GJzsLaxLYvmLwQsQOwaa5H3KxIqfvprCpW9cSw-JQ/edit?usp=sharing"
               rel="noreferrer"
             >
-              <button className="hover:shadow-lg border-ais-indigo border-2 text-ais-indigo font-bold py-2 rounded-xl text-xs w-24 md:w-28">
+              <button className="hover:shadow-lg border-ais-indigo border-2 text-ais-indigo font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
                 Learn More
               </button>
             </a>
           </div>
         </div>
       </div>
-      <div className="rounded-3xl h-80 bg-white bg-opacity-60 border-white border-2 rounded-md shadow-md text-center px-2 py-8 mx-4">
+      <div className="rounded-3xl h-80 bg-white bg-opacity-60 border-white border-2 shadow-md text-center px-2 py-8 xl:mx-1 2xl:mx-3">
         <div className="text-ais-indigo text-xl font-semibold px-4 pt-4">Membership</div>
         <div className="leading-loose font-light text-stone-700 text-sm px-4 py-4">
           Apply to be an official AIS member. Perks include member-only networks, access to
           one-on-ones, and an invite to join an AIS committee.
         </div>
-        <div className="flex flex-wrap justify-center underline text-md text-ais-indigo md:pt-6 gap-4 px-4">
+        <div className="flex flex-wrap justify-center underline text-md text-ais-indigo md:pt-6 xl:pt-2 2xl:pt-6 gap-4 px-4">
           <div className="">
             <a
               target="_blank"
               href="https://coda.io/form/AIS-Membership-Application_dNezXZc0_Z1"
               rel="noreferrer"
             >
-              <button className="hover:shadow-lg border-ais-indigo border-2 bg-ais-indigo text-white font-bold py-2 rounded-xl text-xs w-24 md:w-28">
+              <button className="hover:shadow-lg border-ais-indigo border-2 bg-ais-indigo text-white font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
                 Apply
               </button>
             </a>
@@ -68,26 +68,26 @@ export default function JoinPage() {
               href="https://docs.google.com/document/d/1nHS3CIcXueuZG8hyNEQH4hkFkdmpL9WY2Q_RfiOXBO4/edit?usp=sharing"
               rel="noreferrer"
             >
-              <button className="hover:shadow-lg border-ais-indigo border-2 text-ais-indigo font-bold py-2 rounded-xl text-xs w-24 md:w-28">
+              <button className="hover:shadow-lg border-ais-indigo border-2 text-ais-indigo font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
                 Learn More
               </button>
             </a>
           </div>
         </div>
       </div>
-      <div className="rounded-3xl h-80 bg-white bg-opacity-60 border-white border-2 rounded-md shadow-md text-center px-2 py-8 mx-4">
+      <div className="rounded-3xl h-80 bg-white bg-opacity-60 border-white border-2 shadow-md text-center px-2 py-8 xl:mx-1 2xl:mx-3">
         <div className="text-ais-indigo text-xl font-semibold px-4 pt-4 ">Officer Apps</div>
         <div className="leading-loose font-light text-stone-700 text-sm px-4 pt-4 pb-16">
           Apply to the team. Get an opportunity to organize events, network and more.
         </div>
-        <div className="flex flex-wrap justify-center underline text-md text-ais-indigo md:pt-8 gap-4 px-4">
+        <div className="flex flex-wrap justify-center underline text-md text-ais-indigo md:pt-8 xl:pt-4 2xl:pt-8 gap-4 px-4">
           <div className="">
             <a
               target="_blank"
               href="https://coda.io/form/Untitled-Form_d6uISJI-Cx0"
               rel="noreferrer"
             >
-              <button className="hover:shadow-lg border-ais-indigo border-2 bg-ais-indigo text-white font-bold py-2 rounded-xl text-xs w-24 md:w-28">
+              <button className="hover:shadow-lg border-ais-indigo border-2 bg-ais-indigo text-white font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
                 Apply
               </button>
             </a>
@@ -98,7 +98,7 @@ export default function JoinPage() {
               href="https://docs.google.com/document/d/1RZRlCcmGRv19IZ5MP1_rltm9TeEZJa20uhEavVNzXDU/edit?usp=sharing"
               rel="noreferrer"
             >
-              <button className="hover:shadow-lg border-ais-indigo border-2 text-ais-indigo font-bold py-2 rounded-xl text-xs w-24 md:w-28">
+              <button className="hover:shadow-lg border-ais-indigo border-2 text-ais-indigo font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
                 Learn More
               </button>
             </a>
@@ -136,7 +136,7 @@ export default function JoinPage() {
           <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-2">
             <div className="text-2xl font-bold text-center pt-10 pb-4"><DescriptionIcon className="text-5xl pb-2"/>Applications</div>
             <div>{appDivs}</div>
-            <img className="md:py-8 md:w-30 md:float-left md:-translate-x-4 md:-translate-y-32 invisible md:visible" src="/supertoroid.png" alt="supertoroid" width="150"/>
+            <img className="md:py-4 md:w-30 md:float-left md:-translate-x-4 md:-translate-y-32 invisible md:visible" src="/supertoroid.png" alt="supertoroid" width="150"/>
           </div>
           <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl pb-20 text-center justify-center">
             <div className="md:pr-40 text-2xl font-bold">Want to get involved?</div>
