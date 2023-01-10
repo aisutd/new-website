@@ -9,7 +9,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 import SpringyLaptop from '../components/homepage/SpringyLaptop';
 import SlideInAIS from '../components/homepage/SlideInAIS';
-import SlideInDescription1 from '../components/homepage/SlideInDescription1';
+import SlideInDescription from '../components/homepage/SlideInDescription';
 import AnimatedJoinBtn from '../components/homepage/AnimatedJoinBtn';
 import WhoWeAre from '../components/homepage/WhoWeAre';
 import WhatIsHappening from '../components/homepage/WhatIsHappening';
@@ -46,7 +46,7 @@ export default function HomePage() {
                 </span>
               </div>
               <div className="text-ais-dark-gray font-cairo text-2xl font-thin py-5 px-10 m-2">
-                <SlideInDescription1 duration="400" delay="900"/>
+                <SlideInDescription duration="400" delay="900"/>
               </div>
               <div className="pt-16">
                 <AnimatedJoinBtn duration="500" delay="1300"/>
@@ -91,11 +91,11 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="flex grow justify-self-right">
-                <Button variant="contained" size="large" className="grow self-center bg-ais-navy min-w-[13rem] min-h-[3rem]">
+                <Button variant="contained" size="large" className="grow self-center bg-ais-navy min-w-[13rem] min-h-[3rem] hover:bg-slate-600">
                   <Link href="/join" className="normal-case font-semibold tracking-wide">Subscribe Now</Link>
                 </Button>
                 <div className="text-ais-dark-gray font-semibold text-center self-center justify-self-center px-10">or</div>
-                <Button variant="outlined" size="large" className="grow self-center border-ais-navy min-w-[13rem] min-h-[3rem]">
+                <Button variant="outlined" size="large" className="grow self-center border-ais-navy min-w-[13rem] min-h-[3rem] hover:border-ais-navy hover:bg-slate-100">
                   <Link href="/join" className="text-ais-navy normal-case font-semibold tracking-wide">Join the Team</Link>
                 </Button>
               </div>

@@ -1,6 +1,6 @@
 import { useSpring, useChain, useSpringRef, animated } from 'react-spring'
 
-function SlideInDescription1(props)
+function SlideInDescription(props)
 {
   const dur = parseInt(props.duration)
   const ref = [useSpringRef()]
@@ -24,4 +24,4 @@ function SlideInDescription1(props)
   )
 }
 
-export default SlideInDescription1;
+export default SlideInDescription;

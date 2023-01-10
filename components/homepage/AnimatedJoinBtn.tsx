@@ -19,7 +19,7 @@ function AnimatedJoinBtn(props)
 
   return(
     <animated.div style={{...body}}>
-      <Button variant="contained" size="large" className="bg-[#24314D] hover:bg-slate-400 h-[4rem] w-[14rem] rounded-2xl">
+      <Button variant="contained" size="large" className="bg-[#24314D] hover:bg-slate-600 h-[4rem] w-[14rem] rounded-2xl">
         <Link href="/join" className="font-bold text-white text-base tracking-wide">Join us now</Link>
       </Button>
     </animated.div>
