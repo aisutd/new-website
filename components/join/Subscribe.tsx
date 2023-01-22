@@ -52,7 +52,7 @@ export default function Subscribe() {
 
   return (
     <>
-      <Button onClick={() => setOpenSubscribeModal(true)} variant="contained" size="large" className="grow bg-ais-navy w-[13rem] h-[3rem] hover:bg-slate-600">
+      <Button onClick={() => setOpenSubscribeModal(true)} variant="contained" size="medium" style={{backgroundColor: "#24314D", borderRadius: "9px"}} className="grow w-[13rem] h-[3rem] hover:bg-slate-600">
         <div className="normal-case font-semibold tracking-wide text-hind">Subscribe Now</div>
       </Button>
 

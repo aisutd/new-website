@@ -143,7 +143,7 @@ export default function JoinPage() {
             <div className="text-sm pt-3 pb-5 md:pr-40">
               Join our mailing list to get email reminders about our upcoming events
             </div>
-            <div className="justify-center items-center content-center">
+            <div className="justify-center items-center content-center md:mr-40">
               {Subscribe()}
             </div>
             <img className="md:py-8 md:w-30 md:float-right md:-translate-y-40 hidden md:block" src="/cube.png" alt="cube" width="170"/>
