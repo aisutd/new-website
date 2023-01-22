@@ -81,10 +81,11 @@ export default function AboutPage() {
               </Box>
               <Box sx={{
                 width: "15rem",
-                height: '20rem',
                 border: "2px solid black",
                 borderRadius: "5px",
-              }}>Temp For the box</Box>
+              }}>
+                <img src="images/founder.jpeg"></img>
+              </Box>
               <Box sx={{
                 display: "flex",
                 flexDirection: "column",
