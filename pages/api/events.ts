@@ -1,6 +1,6 @@
 import { Event } from '../../lib/types';
 import { Coda } from 'coda-js';
-import { Description } from '@material-ui/icons';
+import { Description } from '@mui/icons-material';
 import * as fs from 'fs';
 
 /**
