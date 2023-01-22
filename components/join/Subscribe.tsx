@@ -5,6 +5,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Button from '@mui/material/Button';
 
 export default function Subscribe() {
   const [openSubscribeModal, setOpenSubscribeModal] = useState(false);
@@ -50,13 +51,10 @@ export default function Subscribe() {
   };
 
   return (
-    <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl">
-
-      <div className="items-center justify-center md:mr-40">
-        <button  onClick={() => setOpenSubscribeModal(true)} className="shadow-md hover:shadow-2xl transition duration-400 ease-in-out bg-ais-indigo hover:bg-ais-hover-indigo rounded-lg text-white font-semibold w-48 h-11">
-          <div className="px-5 text-sm">Subscribe</div>
-        </button>   
-      </div>
+    <>
+      <Button onClick={() => setOpenSubscribeModal(true)} variant="contained" size="large" className="grow bg-ais-navy w-[13rem] h-[3rem] hover:bg-slate-600">
+        <div className="normal-case font-semibold tracking-wide text-hind">Subscribe Now</div>
+      </Button>
 
       {openSubscribeModal &&
         <div className="rounded-lg px-4 fixed inset-0 h-96 md:h-128 w-96 md:w-128 m-auto flex items-center justify-center bg-[url('../../public/modalbg.png')] bg-cover bg-center">
@@ -66,7 +64,7 @@ export default function Subscribe() {
           <div className="relative">
             <form onSubmit={subscribe}>
               <div className="text-sm pt-8"> Sign up for </div>
-              <div className="text-lg font-bold pb-8"> EMAIL SUBSCRIBTION </div>
+              <div className="text-lg font-bold pb-8"> EMAIL SUBSCRIPTION </div>
               <div className="text-xs grid grid-cols-1 sm:grid-cols-2 grid-flow-row gap-4 text-black px-7">
                 <input
                   id="first-name-input"
@@ -142,6 +140,6 @@ export default function Subscribe() {
           </div>
         </div>
         }
-    </div>
+    </>
   );
 }
