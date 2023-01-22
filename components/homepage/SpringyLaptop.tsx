@@ -10,8 +10,8 @@ function SpringyLaptop()
   })
 
   return(
-    <animated.div className="absolute top-[6rem] right-[6rem]" style={{ ...animatedProps }}>
-      <img src="start_animation.svg" className="h-[36rem] z-0" />
+    <animated.div className="absolute top-[8rem] right-[3rem] w-[32rem] hidden lg:block xl:right-[4rem] xl:w-[38rem]" style={{ ...animatedProps }}>
+      <img src="start_animation.svg" className="h-full z-0" />
     </animated.div>
   )
 }

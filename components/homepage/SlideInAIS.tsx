@@ -32,7 +32,7 @@ function SlideInAIS(props)
   useChain(refs)
 
   return(
-    <div className="flex gap-2">
+    <div className="flex gap-2 justify-center">
     <animated.div style={{...a}}>A</animated.div>
     <animated.div style={{...i}}>I</animated.div>
     <animated.div style={{...s}}>S</animated.div>

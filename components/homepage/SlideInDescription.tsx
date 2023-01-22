@@ -18,7 +18,7 @@ function SlideInDescription(props)
   return(
     <>
     <animated.div style={{...body}}>
-      Student led organization at The University of Texas at Dallas. Discussions, events, and competitions related to artificial intelligence.
+      Our mission: make AI understandable and accessible to everyone.
     </animated.div>
     </>
   )
