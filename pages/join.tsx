@@ -136,7 +136,7 @@ export default function JoinPage() {
           <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-2">
             <div className="text-2xl font-bold text-center pt-10 pb-4"><DescriptionIcon className="text-5xl pb-2"/>Applications</div>
             <div>{appDivs}</div>
-            <img className="md:py-4 md:w-30 md:float-left md:-translate-x-4 md:-translate-y-32 invisible md:visible" src="/supertoroid.png" alt="supertoroid" width="150"/>
+            <img className="md:py-4 md:w-30 md:float-left md:-translate-x-4 md:-translate-y-32 hidden md:block" src="/supertoroid.png" alt="supertoroid" width="150"/>
           </div>
           <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl pb-20 text-center justify-center">
             <div className="md:pr-40 text-2xl font-bold">Want to get involved?</div>
@@ -146,7 +146,7 @@ export default function JoinPage() {
             <div className="justify-center items-center content-center">
               {Subscribe()}
             </div>
-            <img className="md:py-8 md:w-30 md:float-right md:-translate-y-40 invisible md:visible" src="/cube.png" alt="cube" width="170"/>
+            <img className="md:py-8 md:w-30 md:float-right md:-translate-y-40 hidden md:block" src="/cube.png" alt="cube" width="170"/>
           </div>
         </section>
       </main>
