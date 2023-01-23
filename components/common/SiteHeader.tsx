@@ -12,11 +12,28 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import "@fontsource/montserrat";
+import { AccountCircle } from '@mui/icons-material';
+import { Menu, MenuItem } from '@mui/material';
 
 /**
  * The default header for the website.
  */
 export default function SiteHeader() {
+  const [auth, setAuth] = React.useState(true);
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setAuth(event.target.checked);
+  };
+
+  const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
     <AppBar position="sticky" sx={{backgroundColor: "white" }}>
         <Toolbar sx={{width: {md: "100%", lg: "90%", xl: "80%"}}} className='mx-auto max-w-6xl'>
@@ -30,6 +47,49 @@ export default function SiteHeader() {
           >
             <Link href="/">Artificial Intelligence Society</Link>
           </Typography>
+          <Box sx={{display: {md: "none"} }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleMenu}
+              sx={{color: "black", ml:10}}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorEl}
+              anchorOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+              }}
+              open={Boolean(anchorEl)}
+              onClose={handleClose}
+            >
+              <MenuItem onClick={handleClose}>
+                <Link href="/events">Events</Link>
+              </MenuItem>
+              <MenuItem onClick={handleClose}>
+                <Link href="/projects">Projects</Link>
+              </MenuItem>
+              <MenuItem onClick={handleClose}>
+                <Link href="/team">Team</Link>
+              </MenuItem>
+              <MenuItem onClick={handleClose}>
+                <Link href="/about">About</Link>
+              </MenuItem>
+              <MenuItem onClick={handleClose}>
+                <Link href="/join">Join</Link>
+              </MenuItem>
+            </Menu>
+          </Box>
           <Box sx={{ display: { xs: 'none', sm: 'none', md: "flex" } }}>
             <Button sx={{color: "black", textTransform: "none"}}> 
               <Typography
@@ -96,26 +156,6 @@ export default function SiteHeader() {
             <IconButton onClick={() => {window.open("/dc", "_blank")}}>
               <img src="/discord.svg" className="h-6 text-ais-dark-blue" />
             </IconButton>
-                  {/* <Link href="/fb">
-                    <a>
-                      <FacebookIcon />
-                    </a>
-                  </Link>
-                  <Link href="/linkedin">
-                    <a>
-                      <LinkedInIcon />
-                    </a>
-                  </Link>
-                  <Link href="/yt">
-                    <a>
-                      <YouTubeIcon style={{ fontSize: 29 }} />
-                    </a>
-                  </Link>
-                  <Link href="/dc">
-                    <a>
-                      <img src="/discord.svg" className="h-6 text-ais-dark-blue" />
-                    </a>
-                  </Link> */}
           </Box>
       </Toolbar>
     </AppBar>

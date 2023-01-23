@@ -14,6 +14,7 @@
     "@emotion/styled": "^11.10.5",
     "@fontsource/montserrat": "^4.5.13",
     "@headlessui/react": "^1.7.4",
+    "@mailchimp/mailchimp_marketing": "^3.0.80",
     "@mui/icons-material": "^5.11.0",
     "@mui/lab": "^5.0.0-alpha.111",
     "@mui/material": "^5.11.3",
@@ -22,18 +23,24 @@
     "@types/react-dom": "18.0.9",
     "calendar-link": "^2.4.0",
     "coda-js": "^4.0.1",
-    "eslint": "8.28.0",
     "eslint-config-next": "13.0.4",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "force": "^0.0.3",
     "moment": "^2.29.4",
     "next": "13.0.4",
+    "prettier": "^2.8.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-spring": "^9.6.1",
     "typescript": "4.9.3"
   },
   "devDependencies": {
+    "@types/mailchimp__mailchimp_marketing": "^3.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
     "autoprefixer": "^10.4.13",
+    "eslint": "^8.32.0",
     "postcss": "^8.4.19",
     "tailwindcss": "^3.2.4"
   }
