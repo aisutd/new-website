@@ -9,6 +9,9 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import Box from '@mui/material/Box';
+import Tabs from '@mui/material/Tabs';
+import { hexToRgb } from '@mui/material';
+
 
 interface TeamPageProps {
   officers: Officer[];
@@ -27,7 +30,7 @@ export default function TeamPage({ officers }: TeamPageProps) {
   const outreachTeam: Officer[] = [];
   const AIMTeam: Officer[] = [];
   const execTeam: Officer[] = [];
-  const [value, setValue] = React.useState('1');
+  const [value, setValue] = React.useState('All Members');
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
   setValue(newValue);
   };
@@ -42,8 +45,7 @@ export default function TeamPage({ officers }: TeamPageProps) {
     else if (off['team'] == 'Technology Team') techTeam.push(off);
     else if (off['team'] == 'AIM') AIMTeam.push(off);
     else if (off['team'] == 'Outreach Team') outreachTeam.push(off);
-  }
-
+  };
 
   return (
     <div>
@@ -56,13 +58,16 @@ export default function TeamPage({ officers }: TeamPageProps) {
         />
       </Head>
       <main className="min-h-screen bg-ais-light-gray">
-        <img src="/hero.svg" width="100%" height="25%" ></img>
+      <picture>
+        <source media="(min-width: 1200px)" srcSet="/hero.svg" />
+        <img src="placeholder.png" alt=""/>
+      </picture>
           <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-10 md:py-20 ">
           </div>
         <section id="officers">
           <div className="flex flex-grow flex-wrap -mt-10 mx-20 pb-8 gap-8 justify-around">
             <TabContext value={value}>
-              <TabList onChange={handleChange} aria-label="teams" scrollButtons={false} centered>
+              <Tabs value={value} onChange={handleChange} variant="scrollable" defaultValue={"All Members"} aria-label="teams" scrollButtons={true} centered>
                 <Tab value="All Members" label="All" />
                 <Tab value="Executive Members" label="Executive" />
                 <Tab value="Operation Members" label="Operations" />
@@ -72,7 +77,7 @@ export default function TeamPage({ officers }: TeamPageProps) {
                 <Tab value="Outreach Members" label="Outreach" />   
                 <Tab value="Industry Members" label="Industry" />
                 <Tab value="AIM Members" label="AIM" />
-              </TabList>
+              </Tabs> 
               <TabPanel value="All Members">
                 <TeamItem officers={execTeam} team={'Executive'} />
                 <TeamItem officers={operationsTeam} team={'Operations'} />
@@ -81,8 +86,6 @@ export default function TeamPage({ officers }: TeamPageProps) {
                 <TeamItem officers={outreachTeam} team={'Outreach'} />
                 <TeamItem officers={marketingTeam} team={'Marketing'} />
                 <TeamItem officers={industryTeam} team={'Industry'} />
-                {/* <TeamItem officers={projectsTeam} team={'Projects'} /> */}
-                <TeamItem officers={AIMTeam} team={'AIM'} />
               </TabPanel>
               <TabPanel value="Executive Members">
                 <TeamItem officers={execTeam} team={'Executive'} />
