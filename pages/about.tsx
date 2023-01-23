@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import { Officer } from '../lib/types';
 import { Container, Typography, Box } from '@mui/material';
+import { maxWidth } from '@mui/system';
 
 /**
  * A page showing off the history of the organization and how far we've come.
@@ -20,7 +20,6 @@ export default function AboutPage() {
     <div>
       <Head>
         <title>About &ndash; AIS</title>
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta
           name="description"
           content="A brief history of the Artficial Intelligence Society at UTD and how we've grown over the years."
@@ -32,7 +31,25 @@ export default function AboutPage() {
           alignItems: "center",
           justifyContent: "center",
         }}>
-          <img src="about_hero.svg" />
+          <Box textAlign="center" sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            backgroundImage: 'url("top.png")',
+            backgroundSize: "cover",
+            width: "1440px",
+            height: "350px"
+          }}>
+            <Box>
+              <Typography marginBottom="1rem" color="white" textTransform="uppercase" 
+                          fontFamily="Avenir" fontSize="2rem" fontWeight="800" >
+                About Us
+              </Typography>
+              <Typography color="white" fontFamily="Vollkorn" fontSize="1.3rem" >
+                A brief history of the Artficial Intelligence Society at UTD and how we've grown over the years.
+              </Typography>
+            </Box>
+          </Box>
         </Box>
         <Container sx={{ marginTop: "3rem"}}>
           <Box marginBottom={5}>
