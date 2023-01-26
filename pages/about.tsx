@@ -46,7 +46,7 @@ export default function AboutPage() {
                 About Us
               </Typography>
               <Typography color="white" fontFamily="Vollkorn" fontSize="1.3rem" >
-                A brief history of the Artficial Intelligence Society at UTD and how we've grown over the years.
+                A brief history of the Artficial Intelligence Society at UTD and how we&apos;ve grown over the years.
               </Typography>
             </Box>
           </Box>
