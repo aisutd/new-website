@@ -93,7 +93,6 @@ export const getAllOfficers = async (fields?: string[]): Promise<Officer[]> => {
       };
 
       OFFICERS_MAP[officer.name] = officer;
-      storeOfficers();
     }
     // Create an offline backup if necessary
     //storeOfficers();
