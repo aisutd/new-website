@@ -119,15 +119,15 @@ export default function JoinPage() {
         />
       </Head>
       <main className="min-h-screen">
-        <section className="h-64 bg-cover bg-center w-full bg-[url('../../public/top.png')] text-center">
+        <section className="h-64 md:h-96 bg-cover bg-center w-full bg-[url('../../public/top.png')] text-center">
           {/* Hero */}
           <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-8 px-2 text-white">
-            <div className="mt-9 md:mt-14 mb-2 text-xl md:text-3xl font-bold">JOIN US</div>
-            <div className="text-sm md:text-lg">
+            <div className="mt-9 md:mt-28 mb-2 md:mb-4 text-xl md:text-3xl font-bold">JOIN US</div>
+            <div className="text-sm md:text-xl">
               We host workshops, seminars, and social events to help students learn about artificial
               intelligence.
             </div>
-            <div className="text-sm md:text-lg">
+            <div className="text-sm md:text-xl">
               Consider subscribing to our mailing list or joining the AIS team
             </div>
           </div>
