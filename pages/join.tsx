@@ -123,11 +123,11 @@ export default function JoinPage() {
           {/* Hero */}
           <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-8 px-2 text-white">
             <div className="mt-9 md:mt-28 mb-2 md:mb-4 text-xl md:text-3xl font-bold">JOIN US</div>
-            <div className="text-sm md:text-xl">
+            <div className="text-sm md:text-lg">
               We host workshops, seminars, and social events to help students learn about artificial
               intelligence.
             </div>
-            <div className="text-sm md:text-xl">
+            <div className="text-sm md:text-lg">
               Consider subscribing to our mailing list or joining the AIS team
             </div>
           </div>
