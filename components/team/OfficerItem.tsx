@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Officer } from '../../../../org-site/lib/types';
+import { Officer } from "../../lib/types";
 import { Email, GitHub, LinkedIn, Language, FormatQuote } from '@mui/icons-material';
 import Link from 'next/link';
 
