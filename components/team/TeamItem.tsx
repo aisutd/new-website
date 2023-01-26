@@ -1,4 +1,4 @@
-import { Officer } from '../../../../org-site/lib/types';
+import { Officer } from '../../lib/types';
 import OfficerItem from './OfficerItem';
 
 interface TeamProps {

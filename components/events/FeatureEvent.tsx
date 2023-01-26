@@ -1,6 +1,6 @@
-import { Event } from '../../../../org-site/lib/types';
+import {Event} from "../../lib/types";
 import Link from 'next/link';
-import Moment from 'moment';
+import Moment from "moment";
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import { google, outlook, ics } from 'calendar-link';
 import { Menu } from '@headlessui/react';

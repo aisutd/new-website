@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Link from 'next/link';
 import Paper from '@mui/material/Paper';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default WhatIsHappening;
 
@@ -40,6 +41,15 @@ function WhatIsHappening(props)
     config: { tension: tension }
   })
 
+  const smallScreen = useMediaQuery('(max-width:400px)')
+
+  const small = useSpring
+  ({
+    from: { y: 1 },
+    to: { y: 0 },
+    config: { tension: tension }
+  })
+
   return(
     <>
       <div className="relative md:-top-10 lg:-top-14 xl:-top-24 2xl:-top-36">
@@ -48,7 +58,7 @@ function WhatIsHappening(props)
         </animated.div>
       </div>
       <div className="grid justify-items-center pt-10 relative gap-20 md:-top-10 lg:-top-14 lg:grid-cols-2 xl:-top-24 2xl:-top-36">
-        <animated.div className="w-full px-5 sm:px-0 sm:w-[30rem] lg:justify-self-end lg:pl-10 xl:p-0" ref={ref} style={left}>
+        <animated.div className="w-full px-5 sm:px-0 sm:w-[30rem] lg:justify-self-end lg:pl-10 xl:p-0" ref={ref} style={smallScreen ? small : left}>
           <Paper className="h-full text-center rounded-3xl shadow-lg shadow-ais-light-gray">
             <div className="grid justify-items-center pt-10">
               <img src="bulb_head.svg" className="h-[50px]"/>
@@ -62,7 +72,7 @@ function WhatIsHappening(props)
             </div>
           </Paper>
         </animated.div>
-        <animated.div className="w-full px-5 sm:px-0 sm:w-[30rem] lg:justify-self-start lg:pr-10 xl:p-0" ref={ref} style={right}>
+        <animated.div className="w-full px-5 sm:px-0 sm:w-[30rem] lg:justify-self-start lg:pr-10 xl:p-0" ref={ref} style={smallScreen ? small : right}>
           <Paper className="h-full text-center rounded-3xl shadow-lg shadow-ais-light-gray">
             <div className="grid justify-items-center pt-10">
               <img src="friends.svg" className="h-[50px]"/>
