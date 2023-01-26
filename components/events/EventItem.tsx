@@ -1,4 +1,4 @@
-import { Event } from '../../../new-website/lib/types';
+import {Event} from "../../lib/types";
 import Link from 'next/link';
 
 interface EventItemProps {
