@@ -91,9 +91,11 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="grid grow items-center justify-center md:flex lg:justify-self-right">
-                <div>{Subscribe()}</div>
+                <div>
+                  {Subscribe()}
+                </div>
                 <div className="text-ais-dark-gray font-semibold text-center px-10 py-1">or</div>
-                <Button variant="outlined" size="large" className="grow border-ais-navy w-[13rem] h-[3rem] hover:border-ais-navy hover:bg-slate-100">
+                <Button variant="outlined" size="medium" style={{borderColor: "#24314D", borderRadius: "9px"}} className="grow w-[13rem] h-[3rem] hover:bg-slate-600">
                   <Link href="/join" className="text-ais-navy normal-case font-semibold tracking-wide">Join the Team</Link>
                 </Button>
               </div>

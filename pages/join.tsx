@@ -134,7 +134,7 @@ export default function JoinPage() {
         </section>
         <section className="h-auto bg-[url('../../public/background.png')] bg-cover bg-center w-full">
           <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-2">
-            <div className="text-2xl font-bold text-center pt-10 pb-4"><DescriptionIcon className="text-5xl pb-2"/>Applications</div>
+            <div className="text-2xl font-bold text-center pt-10 pb-4"><DescriptionIcon className="pb-2" fontSize="large"/>Applications</div>
             <div>{appDivs}</div>
             <img className="md:py-4 md:w-30 md:float-left md:-translate-x-4 md:-translate-y-32 hidden md:block" src="/supertoroid.png" alt="supertoroid" width="150"/>
           </div>
