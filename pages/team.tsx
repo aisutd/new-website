@@ -111,7 +111,7 @@ export default function TeamPage({ officers }: TeamPageProps) {
               </TabPanel>
               <TabPanel value="AIM Members">
                 <TeamItem officers={AIMTeam} team={'AIM'} />
-              </TabPanel>
+              </TabPanel> 
             </TabContext>
           </div>
         </section>
