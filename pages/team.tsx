@@ -57,6 +57,7 @@ export default function TeamPage({ officers }: TeamPageProps) {
           content="The past and present officers of the Artificial Intelligence Society - the people who make this all possible."
         />
       </Head>
+      
       <main className="min-h-screen bg-ais-light-gray">
       <picture>
         <source media="(min-width: 1200px)" srcSet="/hero.png" />
