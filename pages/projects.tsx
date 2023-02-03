@@ -13,7 +13,7 @@ const slow = { mass: 10, tension: 200, friction: 50 };
 const trans = (x: number, y: number) => `translate3d(${x}px, ${y}px, 0) translate3d(-50%, -50%, 0)`;
 
 interface DemoPageProps {
-  demos: ProjectDemo[];
+  demos: ProjectDemo[]; 
 }
 
 /**
