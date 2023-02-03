@@ -35,12 +35,12 @@ export default function SiteHeader() {
   };
 
   return (
-    <AppBar position="sticky" sx={{backgroundColor: "white" }}>
+    <AppBar position="sticky" sx={{backgroundColor: 'text.primary'}}>
         <Toolbar sx={{width: {md: "100%", lg: "90%", xl: "80%"}}} className='mx-auto max-w-6xl'>
-          <Link href="/"><img src="/ais_light.svg" className="h-8 mr-2" /></Link>
+          <Link href="/"><img src="/ais_dark.svg" className="h-8 mr-2" /></Link>
           <Typography
             className="text-xl"
-            color="black"
+            color="white"
             fontFamily="montserrat"
             fontWeight="bold"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
@@ -94,17 +94,17 @@ export default function SiteHeader() {
             <Button sx={{color: "black", textTransform: "none"}}> 
               <Typography
                 className="text-sm"
-                color="black"
+                color="white"
                 fontFamily="montserrat"
                 fontWeight="bold"
               >
                 <Link href="/events">Events</Link>
               </Typography>
             </Button>
-            <Button sx={{color: "black", textTransform: "none"}}> 
+            <Button sx={{color: "white", textTransform: "none"}}> 
               <Typography
                 className="text-sm"
-                color="black"
+                color="white"
                 fontFamily="montserrat"
                 fontWeight="bold"
               >
@@ -114,7 +114,7 @@ export default function SiteHeader() {
             <Button sx={{color: "black", textTransform: "none"}}> 
               <Typography
                 className="text-sm"
-                color="black"
+                color="white"
                 fontFamily="montserrat"
                 fontWeight="bold"
               >
@@ -124,7 +124,7 @@ export default function SiteHeader() {
             <Button sx={{color: "black", textTransform: "none"}}> 
               <Typography
                 className="text-sm"
-                color="black"
+                color="white"
                 fontFamily="montserrat"
                 fontWeight="bold"
               >
@@ -134,7 +134,7 @@ export default function SiteHeader() {
             <Button sx={{color: "black", textTransform: "none"}}> 
               <Typography
                 className="text-sm"
-                color="black"
+                color="white"
                 fontFamily="montserrat"
                 fontWeight="bold"
               >
@@ -142,19 +142,19 @@ export default function SiteHeader() {
               </Typography>
             </Button>
             <IconButton onClick={() => {window.open("/fb", "_blank")}}>
-              <FacebookIcon className='h-6 text-ais-black'/>
+              <FacebookIcon className='h-6 text-ais-black fill-white'/>
             </IconButton>
             <IconButton onClick={() => {window.open("/insta", "_blank")}}>
-              <InstagramIcon className='h-6 text-ais-black'/>
+              <InstagramIcon className='h-6 text-ais-black fill-white'/>
             </IconButton>
             <IconButton onClick={() => {window.open("/linkedin", "_blank")}}>
-              <LinkedInIcon className='h-6 text-ais-black'/>
+              <LinkedInIcon className='h-6 text-ais-black fill-white'/>
             </IconButton>
             <IconButton onClick={() => {window.open("/yt", "_blank")}}>
-              <YouTubeIcon className='h-6 text-ais-black'/>
+              <YouTubeIcon className='h-6 text-ais-black fill-white'/>
             </IconButton>
             <IconButton onClick={() => {window.open("/dc", "_blank")}}>
-              <img src="/discord.svg" className="h-6 text-ais-dark-blue" />
+              <img src="/discord-mark-white.svg" className="h-5 text-ais-dark-blue" />
             </IconButton>
           </Box>
       </Toolbar>
