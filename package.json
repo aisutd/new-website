@@ -34,10 +34,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-spring": "^9.6.1",
-<<<<<<< HEAD
-=======
     "react-use-measure": "^2.1.1",
->>>>>>> bbdb270 (added animation on projects page)
     "typescript": "4.9.3"
   },
   "devDependencies": {
