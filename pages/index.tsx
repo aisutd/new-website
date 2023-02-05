@@ -37,7 +37,7 @@ export default function HomePage() {
         <section id="intro" className="bg-[url('/bg_rec.svg')] bg-no-repeat bg-cover h-[24rem] w-full mb-10 lg:mb-20 sm:h-[34rem] sm:flex xl:h-[40rem]">
           <div className="grid w-full self-center lg:grid-cols-2 lg:pb-20 2xl:grid-cols-3">
             <div className="text-center 2xl:col-span-2">
-              <div className="font-[1000] font-cairo sm:flex sm:justify-center">
+              <div className="font-[1000] sm:flex sm:justify-center">
                 <div className="text-ais-navy text-5xl mt-5 p-2">
                   we are the
                 </div>
@@ -82,7 +82,7 @@ export default function HomePage() {
           </div>
         </section>
         <section id="callToAction" className="relative grid bg-ais-black h-[13rem] mt-[12rem]">
-          <Paper className="absolute grid text-left rounded-3xl shadow-ais-black justify-self-center -top-[7.5rem] h-[15rem]" elevation={24}>
+          <Paper className="absolute grid text-left rounded-3xl shadow-ais-black justify-self-center -top-[7.5rem] h-[15rem] mx-5" elevation={24}>
             <div className="justify-self-center self-center gap-16 px-16 lg:flex">
               <div className="max-w-[22rem] text-center md:text-left">
                 <div className="text-ais-navy text-3xl font-bold pb-5 lg:pb-2">Want to get involved?</div>
@@ -95,12 +95,28 @@ export default function HomePage() {
                   {Subscribe()}
                 </div>
                 <div className="text-ais-dark-gray font-semibold text-center px-10 py-1">or</div>
-                <Button variant="outlined" size="medium" style={{borderColor: "#24314D", borderRadius: "9px"}} className="grow w-[13rem] h-[3rem] hover:bg-slate-600">
+                <Button variant="outlined" size="medium" style={{borderColor: "#24314D", borderRadius: "9px"}} className="grow w-[13rem] h-[3rem] hover:bg-slate-200">
                   <Link href="/join" className="text-ais-navy normal-case font-semibold tracking-wide">Join the Team</Link>
                 </Button>
               </div>
             </div>
           </Paper>
+        </section>
+        <section id="sponsor-clout" className="h-[15rem] w-full bg-ais-black grid justify-items-center">
+          <div className="w-full max-w-[50rem]">
+            <div className="text-white text-center font-bold text-2xl pt-6 pb-6">
+              Former Sponsors
+            </div>
+            <div className="grid grid-cols-1 text-white font-semibold text-lg justify-center text-center md:grid-cols-2 md:text-left">
+              <text className="px-10 md:justify-self-end">Dallas Mavericks<br/>Deep Cognition<br/>CBRE</text>
+              <text className="px-10 md:justify-self-start">OpenAI<br/>SignaPay</text>
+            </div>
+          </div>
+          <div className="absolute grid justify-center w-full">
+            <img className="w-[40rem] h-[16rem] z-0 md:h-[12rem]"
+            src="rainbow-frame.gif">
+            </img>
+          </div>
         </section>
       </main>
     </div>

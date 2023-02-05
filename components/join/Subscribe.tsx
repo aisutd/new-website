@@ -57,12 +57,18 @@ export default function Subscribe() {
       </Button>
 
       {openSubscribeModal &&
-        <div className="rounded-lg px-4 fixed inset-0 h-96 md:h-128 w-96 md:w-128 m-auto flex items-center justify-center bg-[url('../../public/modalbg.png')] bg-cover bg-center">
+        <div className="fixed top-0 left-0 bg-opacity-80 z-40 bg-slate-500 h-screen w-screen">
+          hello
+        </div>      
+      }
+
+      {openSubscribeModal &&
+        <div className="rounded-lg px-4 fixed inset-0 h-96 md:h-128 w-96 md:w-128 m-auto flex items-center justify-center bg-[url('../../public/modalbg.png')] bg-cover bg-center z-50">
           <button className="absolute right-2 top-2">
             <HighlightOffIcon fontSize="large" onClick={() => setOpenSubscribeModal(false)}/>
           </button>
           <div className="relative">
-            <form onSubmit={subscribe}>
+            <form onSubmit={subscribe} className="text-center">
               <div className="text-sm pt-8"> Sign up for </div>
               <div className="text-lg font-bold pb-8"> EMAIL SUBSCRIPTION </div>
               <div className="text-xs grid grid-cols-1 sm:grid-cols-2 grid-flow-row gap-4 text-black px-7">

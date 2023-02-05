@@ -2,7 +2,6 @@ import { useInView, useSpring, animated } from '@react-spring/web';
 import { useState } from 'react';
 import Link from 'next/link';
 import Paper from '@mui/material/Paper';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default Events;
@@ -10,7 +9,7 @@ export default Events;
 function margin()
 {
   const lg = useMediaQuery('(min-width:1024px)')
-  return lg ? '80%' : '5000% 5000% 5000% 5000%'
+  return lg ? '80%' : '200%'
 }
 
 function Events(props)
@@ -86,10 +85,11 @@ function Events(props)
           <div className="grid justify-items-center pt-6">
             <img src="hack_ai_img.svg" className="w-full px-6 lg:h-[15rem]"/>
           </div>
-          <div className="text-ais-navy text-2xl font-bold my-4 px-8">HackAI</div>
+          <div className="text-ais-navy text-2xl font-bold my-4 px-8">ML Mondays</div>
           <div className="text-ais-dark-gray text-lg font-medium px-8">
-            The largest AI hackathon in North Texas.
+            A semester-long workshop series to get you from zero to ML hero.
           </div>
+          <div className="h-[3rem]"/>
           <div className="text-ais-dark-gray text-sm font-medium underline px-8 pt-4 p-4 lg:absolute lg:bottom-0">
             <Link href="/projects">Learn more</Link>
           </div>
@@ -104,6 +104,7 @@ function Events(props)
           <div className="text-ais-dark-gray text-lg font-medium px-8">
             Guided talks where we teach you AI fundamentals and more.
           </div>
+          <div className="h-[3rem]"/>
           <div className="text-ais-dark-gray text-sm font-medium underline px-8 pt-4 pb-4 lg:absolute lg:bottom-0">
             <Link href="/projects">Learn more</Link>
           </div>
@@ -118,7 +119,8 @@ function Events(props)
           <div className="text-ais-dark-gray text-lg font-medium px-8">
             Fun times and great discussions with students and faculty.
           </div>
-          <div className="text-ais-dark-gray text-sm font-medium underline px-8 pt-4 pb-4 lg:absoulte lg:bottom-0">
+          <div className="h-[3rem]"/>
+          <div className="text-ais-dark-gray text-sm font-medium underline px-8 pt-4 pb-4 lg:absolute lg:bottom-0">
             <Link href="/projects">Learn more</Link>
           </div>
         </Paper>
