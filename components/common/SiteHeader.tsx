@@ -54,7 +54,7 @@ export default function SiteHeader() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleMenu}
-              sx={{color: "white", ml:10}}
+              sx={{color: "black", ml:10}}
             >
               <MenuIcon />
             </IconButton>
