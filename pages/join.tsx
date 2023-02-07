@@ -23,7 +23,7 @@ export default function JoinPage() {
           <div className="">
             <a
               target="_blank"
-              href="https://coda.io/form/AIM-Mentee-Application_ddszWO_e7r4"
+              href="https://coda.io/form/AIM-Spring-23-Mentee-Application_dP79KaIS05u"
               rel="noreferrer"
             >
               <button className="hover:shadow-lg border-ais-indigo border-2 bg-ais-indigo text-white font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
@@ -34,38 +34,7 @@ export default function JoinPage() {
           <div className="">
             <a
               target="_blank"
-              href="https://docs.google.com/document/d/1i4GJzsLaxLYvmLwQsQOwaa5H3KxIqfvprCpW9cSw-JQ/edit?usp=sharing"
-              rel="noreferrer"
-            >
-              <button className="hover:shadow-lg border-ais-indigo border-2 text-ais-indigo font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
-                Learn More
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="rounded-3xl h-80 bg-white bg-opacity-60 border-white border-2 shadow-md text-center px-2 py-8 xl:mx-1 2xl:mx-3">
-        <div className="text-ais-indigo text-xl font-semibold px-4 pt-4">Membership</div>
-        <div className="leading-loose font-light text-stone-700 text-sm px-4 py-4">
-          Apply to be an official AIS member. Perks include member-only networks, access to
-          one-on-ones, and an invite to join an AIS committee.
-        </div>
-        <div className="flex flex-wrap justify-center underline text-md text-ais-indigo md:pt-6 xl:pt-2 2xl:pt-6 gap-4 px-4">
-          <div className="">
-            <a
-              target="_blank"
-              href="https://coda.io/form/AIS-Membership-Application_dNezXZc0_Z1"
-              rel="noreferrer"
-            >
-              <button className="hover:shadow-lg border-ais-indigo border-2 bg-ais-indigo text-white font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
-                Apply
-              </button>
-            </a>
-          </div>
-          <div className="">
-            <a
-              target="_blank"
-              href="https://docs.google.com/document/d/1nHS3CIcXueuZG8hyNEQH4hkFkdmpL9WY2Q_RfiOXBO4/edit?usp=sharing"
+              href="https://docs.google.com/document/d/1-LuDjSFCLl52_M42gxWnaz3rKkzDLQV9b2zTubiMF2s/edit"
               rel="noreferrer"
             >
               <button className="hover:shadow-lg border-ais-indigo border-2 text-ais-indigo font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
@@ -84,7 +53,7 @@ export default function JoinPage() {
           <div className="">
             <a
               target="_blank"
-              href="https://coda.io/form/Untitled-Form_d6uISJI-Cx0"
+              href="https://coda.io/form/AIS-Spring-23-Application_d8Rkp5FLTaf"
               rel="noreferrer"
             >
               <button className="hover:shadow-lg border-ais-indigo border-2 bg-ais-indigo text-white font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
@@ -95,7 +64,7 @@ export default function JoinPage() {
           <div className="">
             <a
               target="_blank"
-              href="https://docs.google.com/document/d/1RZRlCcmGRv19IZ5MP1_rltm9TeEZJa20uhEavVNzXDU/edit?usp=sharing"
+              href="https://docs.google.com/document/d/1yp3QWAK14H7swKGRBFHEUN454X13TVWUkQINz19DHuE/edit"
               rel="noreferrer"
             >
               <button className="hover:shadow-lg border-ais-indigo border-2 text-ais-indigo font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
