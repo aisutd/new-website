@@ -2,23 +2,40 @@ import { useState } from 'react';
 import { Officer } from "../../lib/types";
 import { Email, GitHub, LinkedIn, Language, FormatQuote } from '@mui/icons-material';
 import Link from 'next/link';
+import { useSpring, animated } from 'react-spring'
 
 interface OfficerItemProps {
   officer: Officer;
 }
 
 function officerImage(officer: Officer) {
+  const animatedProps = useSpring
+  ({
+    from: { transform: 'rotate(0deg)' },
+    to: { transform: 'rotate(360000deg)' },
+    config: { duration: 1800000 }
+  })
+
+  const noStyle = useSpring
+  ({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    config: { duration: 10 }
+  })
+
+  const isPresident = officer.title === 'President'
+
   if (officer.image) {
     return (
-      <div className="flex justify-center h-52">
+      <animated.div className="flex justify-center h-52" style={isPresident ? animatedProps : noStyle}>
         <img src={officer.image} className="rounded-full p-4" />
-      </div>
+      </animated.div>
     );
   } else {
     return (
-      <div className="flex justify-center h-52">
+      <animated.div className="flex justify-center h-52" style={isPresident ? animatedProps : noStyle}>
         <img src="/default_photo.svg" className="rounded-full p-4" />
-      </div>
+      </animated.div>
     );
   }
 }

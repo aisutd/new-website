@@ -18,7 +18,7 @@ function SlideInDescription(props)
   return(
     <>
     <animated.div style={{...body}}>
-      Our mission: make AI understandable and accessible to everyone.
+      Our mission: Make artificial intelligence understandable and accessible to everyone. We want to demystify AI for all.
     </animated.div>
     </>
   )
