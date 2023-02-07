@@ -12,16 +12,16 @@ function AnimatedJoinBtn(props)
     ref: ref[0],
     from: { opacity: 0 },
     to: { opacity: 1 },
-    config:  { duration: dur }
+    config: { duration: dur }
   })
 
   useChain(ref, [1], parseInt(props.delay))
 
   return(
     <animated.div style={{...body}}>
-      <Button variant="contained" size="medium" style={{backgroundColor: "#24314D", borderRadius: "9px"}} className="hover:bg-slate-600 h-[4rem] w-[14rem] rounded-2xl">
+      <button style={{backgroundColor: "#24314D", borderRadius: "9px"}} className="text-hind uppercase hover:bg-slate-600 h-[4rem] w-[14rem] rounded-2xl">
         <Link href="/join" className="font-bold text-white text-base tracking-wide">Join us now</Link>
-      </Button>
+      </button>
     </animated.div>
   )
 }

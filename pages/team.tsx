@@ -57,9 +57,10 @@ export default function TeamPage({ officers }: TeamPageProps) {
           content="The past and present officers of the Artificial Intelligence Society - the people who make this all possible."
         />
       </Head>
+      
       <main className="min-h-screen bg-ais-light-gray">
       <picture>
-        <source media="(min-width: 1200px)" srcSet="/hero.svg" />
+        <source media="(min-width: 1200px)" srcSet="/hero.png" />
         <img src="placeholder.png" alt=""/>
       </picture>
           <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-10 md:py-20 ">
@@ -110,7 +111,7 @@ export default function TeamPage({ officers }: TeamPageProps) {
               </TabPanel>
               <TabPanel value="AIM Members">
                 <TeamItem officers={AIMTeam} team={'AIM'} />
-              </TabPanel>
+              </TabPanel> 
             </TabContext>
           </div>
         </section>

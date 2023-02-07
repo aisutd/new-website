@@ -35,7 +35,7 @@ export default function SiteHeader() {
   };
 
   return (
-    <AppBar position="sticky" sx={{backgroundColor: "white" }}>
+    <AppBar position="sticky" sx={{backgroundColor: 'white'}}>
         <Toolbar sx={{width: {md: "100%", lg: "90%", xl: "80%"}}} className='mx-auto max-w-6xl'>
           <Link href="/"><img src="/ais_light.svg" className="h-8 mr-2" /></Link>
           <Typography
@@ -101,7 +101,7 @@ export default function SiteHeader() {
                 <Link href="/events">Events</Link>
               </Typography>
             </Button>
-            <Button sx={{color: "black", textTransform: "none"}}> 
+            <Button sx={{color: "white", textTransform: "none"}}> 
               <Typography
                 className="text-sm"
                 color="black"
@@ -142,7 +142,7 @@ export default function SiteHeader() {
               </Typography>
             </Button>
             <IconButton onClick={() => {window.open("/fb", "_blank")}}>
-              <FacebookIcon className='h-6 text-ais-black'/>
+              <FacebookIcon className='h-6 text-ais-black '/>
             </IconButton>
             <IconButton onClick={() => {window.open("/insta", "_blank")}}>
               <InstagramIcon className='h-6 text-ais-black'/>
@@ -154,7 +154,7 @@ export default function SiteHeader() {
               <YouTubeIcon className='h-6 text-ais-black'/>
             </IconButton>
             <IconButton onClick={() => {window.open("/dc", "_blank")}}>
-              <img src="/discord.svg" className="h-6 text-ais-dark-blue" />
+              <img src="/discord.svg" className="h-5" />
             </IconButton>
           </Box>
       </Toolbar>
