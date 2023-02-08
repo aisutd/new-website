@@ -52,7 +52,7 @@ export default function SiteFooterAlt() {
                     window.open('/fb', '_blank');
                   }}
                 >
-                  <FacebookOutlinedIcon className="h-6 fill-white" />
+                  <FacebookOutlinedIcon className="h-6 text-white" />
                 </IconButton>
               </div>
               <div>
@@ -61,7 +61,7 @@ export default function SiteFooterAlt() {
                     window.open('/insta', '_blank');
                   }}
                 >
-                  <InstagramIcon className="h-6 fill-white" />
+                  <InstagramIcon className="h-6 text-white" />
                 </IconButton>
               </div>
               <div>
@@ -70,7 +70,7 @@ export default function SiteFooterAlt() {
                     window.open('/linkedin', '_blank');
                   }}
                 >
-                  <LinkedInIcon className="h-6 fill-white" />
+                  <LinkedInIcon className="h-6 text-white" />
                 </IconButton>
               </div>
               <div>
@@ -79,7 +79,7 @@ export default function SiteFooterAlt() {
                     window.open('/yt', '_blank');
                   }}
                 >
-                  <YouTubeIcon className="h-6 fill-white" />
+                  <YouTubeIcon className="h-6 text-white" />
                 </IconButton>
               </div>
             </div>
