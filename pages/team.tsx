@@ -10,13 +10,14 @@ import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
-import { hexToRgb } from '@mui/material';
+import { hexToRgb, Typography } from '@mui/material';
 
 
 interface TeamPageProps {
   officers: Officer[];
 }
 
+const spacing = 10;
 /**
  * A page that displays all officers in the organization.
  */
@@ -57,12 +58,36 @@ export default function TeamPage({ officers }: TeamPageProps) {
           content="The past and present officers of the Artificial Intelligence Society - the people who make this all possible."
         />
       </Head>
-      
       <main className="min-h-screen bg-ais-light-gray">
-      <picture>
+      <Box marginTop={spacing} sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}>
+          <Box textAlign="center" sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            backgroundImage: 'url("top.png")',
+            backgroundSize: "cover",
+            width: "1440px",
+            height: "350px"
+          }}>
+            <Box>
+              <Typography marginBottom="1rem" color="white" textTransform="uppercase" 
+                          fontFamily="Avenir" fontSize="2rem" fontWeight="800" >
+                MEET THE TEAM
+              </Typography>
+              <Typography color="white" fontFamily="Vollkorn" fontSize="1.3rem" >
+                Meet everyone that helps run the Artificial Intelligence Society at UT Dallas 
+              </Typography>
+            </Box>
+          </Box>
+        </Box>
+      {/* <picture>
         <source media="(min-width: 1200px)" srcSet="/hero.png" />
         <img src="placeholder.png" alt=""/>
-      </picture>
+      </picture> */}
           <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-10 md:py-20 ">
           </div>
         <section id="officers">
