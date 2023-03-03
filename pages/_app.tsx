@@ -1,5 +1,7 @@
+import { Switch } from '@mui/material';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import React from 'react';
 import 'tailwindcss/tailwind.css';
 import SiteLayout from '../components/common/SiteLayout';
 
