@@ -42,8 +42,8 @@ export default function SiteHeader() {
   
 
   return (
-    <div className='parent dark'>
-      <AppBar className="bg-white dark:bg-black" position="sticky">
+    <div>
+      <AppBar className="bg-white" position="sticky">
           <Toolbar sx={{width: {md: "100%", lg: "90%", xl: "80%"}}} className='mx-auto max-w-6xl'>
             <Link href="/"><img src="/ais_light.svg" className="h-8 mr-2" /></Link>
             <Typography
@@ -164,7 +164,6 @@ export default function SiteHeader() {
               <IconButton onClick={() => {window.open("/dc", "_blank")}}>
                 <img src="/discord.svg" className="h-5" />
               </IconButton>
-              
               <Button onClick={toggleDarkMode}></Button>
             </Box>
             
