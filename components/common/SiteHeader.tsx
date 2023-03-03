@@ -43,7 +43,7 @@ export default function SiteHeader() {
 
   return (
     <div>
-      <AppBar className="bg-white" position="sticky">
+      <AppBar sx={{backgroundColor: "white"}} position="sticky">
           <Toolbar sx={{width: {md: "100%", lg: "90%", xl: "80%"}}} className='mx-auto max-w-6xl'>
             <Link href="/"><img src="/ais_light.svg" className="h-8 mr-2" /></Link>
             <Typography
