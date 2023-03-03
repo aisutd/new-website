@@ -96,7 +96,7 @@ function WhatIsHappening(props)
               The largest AI hackathon in North Texas. A fun time of learning, hacking, and making memories. No experience required.
             </div>
             <div className="absolute bottom-0 w-full text-ais-dark-gray text-right font-medium px-4 pt-8 pb-4">
-              <Link href="/projects">Learn more <ArrowForwardIosIcon sx={{fontSize:17}} /></Link>
+              <Link href="https://www.hackai.org">Learn more <ArrowForwardIosIcon sx={{fontSize:17}} /></Link>
             </div>
             <div className="h-[4rem]"/>
           </Paper>
