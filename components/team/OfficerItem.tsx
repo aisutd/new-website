@@ -28,15 +28,15 @@ function officerImage(officer: Officer) {
   if (officer.image) {
     return (
       //<animated.div className="flex justify-center h-52" style={isPresident ? animatedProps : noStyle}>
-      <div className="flex justify-center h-52">
-        <img src={officer.image} className="rounded-full p-4" />
+      <div className="flex justify-center h-52 w-full">
+        <img src={officer.image} className="rounded-full p-4 h-52 w-52" />
       </div>
       //</animated.div>
     );
   } else {
     return (
       //<animated.div className="flex justify-center h-52" style={isPresident ? animatedProps : noStyle}>
-      <div className="flex justify-center h-52">
+      <div className="flex justify-center h-52 w-full">
         <img src="/default_photo.svg" className="rounded-full p-4" />
       </div>
       //</animated.div>
