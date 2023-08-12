@@ -40,7 +40,7 @@ export const getAllOfficers = async (fields?: string[]): Promise<Officer[]> => {
     const CodaAPI = new Coda(process.env.CODA_OFFICER_API_KEY);
     // AIS Personnel Doc: zWBpla6LLN
     const doc = await CodaAPI.getDoc('zWBpla6LLN'); // Grab AIS Personnel Doc from Coda API using the Doc ID at https://coda.io/developers/apis/v1
-    const table = await doc.getTable('Officers 2022'); // Grab the actual table from the doc
+    const table = await doc.getTable('Officers 2023'); // Grab the actual table from the doc
     const rows = await table.listRows({ useColumnNames: true, valueFormat: 'rich' }); // Grab all the officer entries in the doc
 
     for (let i = 0; i < rows.length; i++) {
