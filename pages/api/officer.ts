@@ -100,6 +100,7 @@ export const getAllOfficers = async (fields?: string[]): Promise<Officer[]> => {
     // console.log(error);
     console.log('Error No: ' + error.errno);
     console.log('Error Code: ' + error.code);
+    console.log('!~could not get officer list from coda : (')
     // Restore from an offline backup if necessary
     retrieveOfficers();
   }
