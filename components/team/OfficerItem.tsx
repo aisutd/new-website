@@ -23,19 +23,23 @@ function officerImage(officer: Officer) {
     config: { duration: 10 }
   })
 
-  const isPresident = officer.title === 'President'
+  //const isPresident = officer.title === 'President'
 
   if (officer.image) {
     return (
-      <animated.div className="flex justify-center h-52" style={isPresident ? animatedProps : noStyle}>
-        <img src={officer.image} className="rounded-full p-4" />
-      </animated.div>
+      //<animated.div className="flex justify-center h-52" style={isPresident ? animatedProps : noStyle}>
+      <div className="flex justify-center h-52 w-full">
+        <img src={officer.image} className="rounded-full p-4 h-52 w-52 object-cover" />
+      </div>
+      //</animated.div>
     );
   } else {
     return (
-      <animated.div className="flex justify-center h-52" style={isPresident ? animatedProps : noStyle}>
-        <img src="/default_photo.svg" className="rounded-full p-4" />
-      </animated.div>
+      //<animated.div className="flex justify-center h-52" style={isPresident ? animatedProps : noStyle}>
+      <div className="flex justify-center h-52 w-full">
+        <img src="/default_photo.svg" className="rounded-full p-4 object-cover" />
+      </div>
+      //</animated.div>
     );
   }
 }
