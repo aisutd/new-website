@@ -27,10 +27,10 @@ export default function TeamPage({ officers }: TeamPageProps) {
   const industryTeam: Officer[] = [];
   const marketingTeam: Officer[] = [];
   const operationsTeam: Officer[] = [];
-  const projectsTeam: Officer[] = [];
   const outreachTeam: Officer[] = [];
-  const AIMTeam: Officer[] = [];
+  const aimTeam: Officer[] = [];
   const execTeam: Officer[] = [];
+  const hrTeam: Officer[] = [];
   const [value, setValue] = React.useState('All Members');
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
   setValue(newValue);
@@ -38,14 +38,14 @@ export default function TeamPage({ officers }: TeamPageProps) {
 
   for (const off of officers) {
     if (off['team'] == 'Executive Board') execTeam.push(off);
-    else if (off['team'] == 'Industry Committee') industryTeam.push(off);
-    else if (off['team'] == 'Marketing Committee') marketingTeam.push(off);
-    else if (off['team'] == 'Operations Committee') operationsTeam.push(off);
-    else if (off['team'] == 'Finance Committee') financeTeam.push(off);
-    else if (off['team'] == 'Projects Team') projectsTeam.push(off);
-    else if (off['team'] == 'Technology Team') techTeam.push(off);
-    else if (off['team'] == 'AIM') AIMTeam.push(off);
-    else if (off['team'] == 'Outreach Team') outreachTeam.push(off);
+    else if (off['team'] == 'Industry') industryTeam.push(off);
+    else if (off['team'] == 'Marketing') marketingTeam.push(off);
+    else if (off['team'] == 'Operations') operationsTeam.push(off);
+    else if (off['team'] == 'Finance') financeTeam.push(off);
+    else if (off['team'] == 'Human Resources') hrTeam.push(off);
+    else if (off['team'] == 'Technology') techTeam.push(off);
+    else if (off['team'] == 'AIM') aimTeam.push(off);
+    else if (off['team'] == 'Outreach') outreachTeam.push(off);
   };
 
   return (
@@ -96,6 +96,7 @@ export default function TeamPage({ officers }: TeamPageProps) {
               <Tabs value={value} onChange={handleChange} variant="scrollable" defaultValue={"All Members"} aria-label="teams" scrollButtons={true} centered>
                 <Tab value="All Members" label="All" />
                 <Tab value="Executive Members" label="Executive" />
+                <Tab value="Human Resources Members" label="HR" />
                 <Tab value="Operation Members" label="Operations" />
                 <Tab value="Finance Members" label="Finance" />
                 <Tab value="Technology Members" label="Technology" />
@@ -106,15 +107,20 @@ export default function TeamPage({ officers }: TeamPageProps) {
               </Tabs> 
               <TabPanel value="All Members">
                 <TeamItem officers={execTeam} team={'Executive'} />
+                <TeamItem officers={hrTeam} team={'Human Resources'} />
                 <TeamItem officers={operationsTeam} team={'Operations'} />
                 <TeamItem officers={financeTeam} team={'Finance'} />
                 <TeamItem officers={techTeam} team={'Technology'} />
                 <TeamItem officers={outreachTeam} team={'Outreach'} />
                 <TeamItem officers={marketingTeam} team={'Marketing'} />
                 <TeamItem officers={industryTeam} team={'Industry'} />
+                <TeamItem officers={aimTeam} team={'AIM'} />
               </TabPanel>
               <TabPanel value="Executive Members">
                 <TeamItem officers={execTeam} team={'Executive'} />
+              </TabPanel>
+              <TabPanel value="Human Resources Members">
+                <TeamItem officers={hrTeam} team={'Human Resources'} />
               </TabPanel>
               <TabPanel value="Operation Members">
                 <TeamItem officers={operationsTeam} team={'Operations'} />
@@ -135,7 +141,7 @@ export default function TeamPage({ officers }: TeamPageProps) {
                 <TeamItem officers={industryTeam} team={'Industry'} />
               </TabPanel>
               <TabPanel value="AIM Members">
-                <TeamItem officers={AIMTeam} team={'AIM'} />
+                <TeamItem officers={aimTeam} team={'AIM'} />
               </TabPanel> 
             </TabContext>
           </div>
