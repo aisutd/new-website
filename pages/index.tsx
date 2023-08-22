@@ -14,6 +14,8 @@ import WhatIsHappening from '../components/homepage/WhatIsHappening';
 import Events from '../components/homepage/Events';
 import Subscribe from '../components/join/Subscribe';
 import KickoffModal from '../components/events/KickoffModal';
+import { JavascriptRounded } from '@mui/icons-material';
+import Partners from '../components/homepage/Sponsors';
 
 /**
  * The root page for the organization website.
@@ -81,6 +83,7 @@ export default function HomePage() {
             <Events speed="100"/>
           </div>
         </section>
+        <Partners/>
         <section id="callToAction" className="relative grid bg-ais-black h-[13rem] mt-[12rem]">
           <Paper className="absolute grid text-left rounded-3xl shadow-ais-black justify-self-center -top-[7.5rem] h-[15rem] mx-5" elevation={24}>
             <div className="justify-self-center self-center gap-16 px-16 lg:flex">
@@ -101,22 +104,6 @@ export default function HomePage() {
               </div>
             </div>
           </Paper>
-        </section>
-        <section id="sponsor-clout" className="h-[15rem] w-full bg-ais-black grid justify-items-center">
-          <div className="w-full max-w-[50rem]">
-            <div className="text-white text-center font-bold text-2xl pt-6 pb-6">
-              Former Sponsors
-            </div>
-            <div className="grid grid-cols-1 text-white font-semibold text-lg justify-center text-center md:grid-cols-2 md:text-left">
-              <text className="px-10 md:justify-self-end">Dallas Mavericks<br/>Deep Cognition<br/>CBRE</text>
-              <text className="px-10 md:justify-self-start">OpenAI<br/>SignaPay</text>
-            </div>
-          </div>
-          <div className="absolute grid justify-center w-full">
-            <img className="w-[40rem] h-[16rem] z-0 md:h-[12rem]"
-            src="rainbow-frame.gif">
-            </img>
-          </div>
         </section>
       </main>
     </div>
