@@ -14,7 +14,7 @@ export default function JoinPage() {
   const appDivs = (
     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 items-start gap-2 pt-8 pb-20 px-8">
       <div className="pb-4 rounded-3xl h-80 xl:h-96 bg-white bg-opacity-60 border-white border-2 shadow-md text-center px-2 py-8 xl:mx-1 2xl:mx-3">
-        <div className="text-ais-indigo text-xl font-semibold px-4 pt-4 ">AI Member</div>
+        <div className="text-ais-indigo text-xl font-semibold px-4 pt-4 ">AIS Member</div>
         <div className="leading-loose font-light text-stone-700 text-sm px-4 pt-4 pb-8">
         Apply to our membership program to gain access to exclusive perks and a member-only community of fellow AI enthusiasts.
         </div>
