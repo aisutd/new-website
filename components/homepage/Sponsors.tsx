@@ -59,7 +59,7 @@ function displaySponsers() {
 
 function Partners() {
     return (
-        <Box marginY="3rem"  className="mb-10" sx={{
+        <Box marginY="3rem"  className="mb-20" sx={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center"
@@ -69,7 +69,7 @@ function Partners() {
                 flexDirection: "column",
                 alignItems: "center"
             }}>
-                <div className="text-ais-navy text-3xl font-bold mb-">2023 Sponsers</div>
+                <div className="text-ais-navy text-3xl font-bold mb-6 mt-8">2023 Sponsers</div>
             </Box>
             <Box sx={{
                 display: "flex",
