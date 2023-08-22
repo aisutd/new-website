@@ -69,7 +69,7 @@ function Partners() {
                 flexDirection: "column",
                 alignItems: "center"
             }}>
-                <div className="text-ais-navy text-3xl font-bold mb-6 mt-8">2023 Sponsers</div>
+                <div className="text-ais-navy text-3xl font-bold mb-6 mt-8">2023 Sponsors</div>
             </Box>
             <Box sx={{
                 display: "flex",
