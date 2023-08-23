@@ -35,20 +35,31 @@ module.exports = {
         },
         {
           source: '/aim/info',
-          destination:
-            'https://docs.google.com/document/d/1i4GJzsLaxLYvmLwQsQOwaa5H3KxIqfvprCpW9cSw-JQ/edit?usp=sharing',
+          destination: 'https://docs.google.com/document/d/1i4GJzsLaxLYvmLwQsQOwaa5H3KxIqfvprCpW9cSw-JQ/edit?usp=sharing',
+          basePath: false,
+          permanent: true,
+        },
+        {
+          source: '/aim',
+          destination: '/aim/info',
           basePath: false,
           permanent: true,
         },
         {
           source: '/aim/apply',
-          destination: 'https://coda.io/form/AIM-Fall-2021-Mentee-Application_dDlWrs9O7kG',
+          destination: '/',
           basePath: false,
           permanent: true,
         },
         {
-          source: '/kickoff',
-          destination: '/events/kickoff-f21',
+          source: '/aim/mentor-info',
+          destination: 'https://docs.google.com/document/d/1py105xfpWlvjWc5c7175m5qDaCIeusuwCle2xnyI8Fo/edit',
+          basePath: false,
+          permanent: true,
+        },
+        {
+          source: '/aim/mentor-apply',
+          destination: '/',
           basePath: false,
           permanent: true,
         },

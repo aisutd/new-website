@@ -15,14 +15,14 @@ export default function JoinPage() {
     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 items-start gap-2 pt-8 pb-20 px-8">
       <div className="pb-4 rounded-3xl h-80 xl:h-96 bg-white bg-opacity-60 border-white border-2 shadow-md text-center px-2 py-8 xl:mx-1 2xl:mx-3">
         <div className="text-ais-indigo text-xl font-semibold px-4 pt-4 ">AIS Member</div>
-        <div className="leading-loose font-light text-stone-700 text-sm px-4 pt-4 pb-8">
+        <div className="leading-loose font-light text-stone-700 text-sm p-4 lg:h-[9rem] xl:h-[12rem]">
         Apply to our membership program to gain access to exclusive perks and a member-only community of fellow AI enthusiasts.
         </div>
-        <div className="flex flex-wrap justify-center underline text-md text-ais-indigo md:pt-8 xl:pt-3 gap-4 px-4">
+        <div className="flex flex-wrap justify-center underline text-md text-ais-indigo pt-8 md:pt-8 xl:pt-0 gap-4 px-4">
           <div className="">
             <a
               target="_blank"
-              href="https://aisutd.org/member/apply"
+              href="/member/apply"
               rel="noreferrer"
             >
               <button className="hover:shadow-lg border-ais-indigo border-2 bg-ais-indigo text-white font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
@@ -33,37 +33,7 @@ export default function JoinPage() {
           <div className="">
             <a
               target="_blank"
-              href="https://aisutd.org/member/info"
-              rel="noreferrer"
-            >
-              <button className="hover:shadow-lg border-ais-indigo border-2 text-ais-indigo font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
-                Learn More
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="pb-4 rounded-3xl h-80 xl:h-96 bg-white bg-opacity-60 border-white border-2 shadow-md text-center px-2 py-8 xl:mx-1 2xl:mx-3">
-        <div className="text-ais-indigo text-xl font-semibold px-4 pt-4 ">Officer Apps</div>
-        <div className="leading-loose font-light text-stone-700 text-sm px-4 pt-4 pb-8">
-          Apply to the team and get an opportunity to organize events, grow your network and more.
-        </div>
-        <div className="flex flex-wrap justify-center underline text-md text-ais-indigo md:pt-8 xl:pt-10 gap-4 px-4">
-          <div className="">
-            <a
-              target="_blank"
-              href="https://coda.io/form/AIS-Officer-Application-F23_d208KkPg2wm"
-              rel="noreferrer"
-            >
-              <button className="hover:shadow-lg border-ais-indigo border-2 bg-ais-indigo text-white font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
-                Apply
-              </button>
-            </a>
-          </div>
-          <div className="">
-            <a
-              target="_blank"
-              href="https://aisutd.org/officer/info"
+              href="/member/info"
               rel="noreferrer"
             >
               <button className="hover:shadow-lg border-ais-indigo border-2 text-ais-indigo font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
@@ -75,15 +45,15 @@ export default function JoinPage() {
       </div>
       <div className="pb-4 rounded-3xl h-80 xl:h-96 bg-white bg-opacity-60 border-white border-2 shadow-md text-center px-2 py-8 xl:mx-1 2xl:mx-3">
         <div className="text-ais-indigo text-xl font-semibold px-4 pt-4">AI Mentee</div>
-        <div className="leading-loose font-light text-stone-700 text-sm px-4 py-4">
-          Apply as a mentee and get a chance to learn foundational concepts in ML and to work on an AI
+        <div className="leading-loose font-light text-stone-700 text-sm p-4 lg:h-[9rem] xl:h-[12rem]">
+          Apply as a mentee to learn foundational concepts in ML and work on an AI
           project of your interest, guided by experienced mentors.
         </div>
-        <div className="flex flex-wrap justify-center underline text-md text-ais-indigo md:pt-8 xl:pt-0 gap-4 px-4">
+        <div className="flex flex-wrap justify-center underline text-md text-ais-indigo pt-8 md:pt-8 xl:pt-0 gap-4 px-4">
           <div className="">
             <a
               target="_blank"
-              href="https://coda.io/form/AIM-Spring-23-Mentee-Application_dP79KaIS05u"
+              href="/aim/apply"
               rel="noreferrer"
             >
               <button className="hover:shadow-lg border-ais-indigo border-2 bg-ais-indigo text-white font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
@@ -94,7 +64,7 @@ export default function JoinPage() {
           <div className="">
             <a
               target="_blank"
-              href="https://docs.google.com/document/d/1-LuDjSFCLl52_M42gxWnaz3rKkzDLQV9b2zTubiMF2s/edit"
+              href="/aim/info"
               rel="noreferrer"
             >
               <button className="hover:shadow-lg border-ais-indigo border-2 text-ais-indigo font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
@@ -106,14 +76,14 @@ export default function JoinPage() {
       </div>
       <div className="pb-4 rounded-3xl h-80 xl:h-96 bg-white bg-opacity-60 border-white border-2 shadow-md text-center px-2 py-8 xl:mx-1 2xl:mx-3">
         <div className="text-ais-indigo text-xl font-semibold px-4 pt-4">AI Mentor</div>
-        <div className="leading-loose font-light text-stone-700 text-sm px-4 pt-4 pb-11">
-          Apply as a mentor and get a chance to guide a team through a project in foundational ML and AI concepts.
+        <div className="leading-loose font-light text-stone-700 text-sm p-4 lg:h-[9rem] xl:h-[12rem]">
+          Apply as a mentor and get a chance to guide a team through a semester-long project in foundational ML and AI concepts.
         </div>
-        <div className="flex flex-wrap justify-center underline text-md text-ais-indigo md:pt-8 xl:pt-0 gap-4 px-4">
+        <div className="flex flex-wrap justify-center underline text-md text-ais-indigo pt-8 md:pt-8 xl:pt-0 gap-4 px-4">
           <div className="">
             <a
               target="_blank"
-              href="https://coda.io/form/AIM-Spring23-Mentor-Application_dIKZ3nkwhRo"
+              href="/aim/mentor-apply"
               rel="noreferrer"
             >
               <button className="hover:shadow-lg border-ais-indigo border-2 bg-ais-indigo text-white font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
@@ -124,7 +94,37 @@ export default function JoinPage() {
           <div className="">
             <a
               target="_blank"
-              href="https://docs.google.com/document/d/1py105xfpWlvjWc5c7175m5qDaCIeusuwCle2xnyI8Fo/edit"
+              href="/aim/mentor-info"
+              rel="noreferrer"
+            >
+              <button className="hover:shadow-lg border-ais-indigo border-2 text-ais-indigo font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
+                Learn More
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="pb-4 rounded-3xl h-80 xl:h-96 bg-white bg-opacity-60 border-white border-2 shadow-md text-center px-2 py-8 xl:mx-1 2xl:mx-3">
+        <div className="text-ais-indigo text-xl font-semibold px-4 pt-4 ">Officer Apps</div>
+        <div className="leading-loose font-light text-stone-700 text-sm p-4 lg:h-[9rem] xl:h-[12rem]">
+          Apply to the team and get an opportunity to organize events, be part of our officer community, and more.
+        </div>
+        <div className="flex flex-wrap justify-center underline text-md text-ais-indigo pt-8 md:pt-8 xl:pt-0 gap-4 px-4">
+          <div className="">
+            <a
+              target="_blank"
+              href="/officer/apply"
+              rel="noreferrer"
+            >
+              <button className="hover:shadow-lg border-ais-indigo border-2 bg-ais-indigo text-white font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
+                Apply
+              </button>
+            </a>
+          </div>
+          <div className="">
+            <a
+              target="_blank"
+              href="officer/info"
               rel="noreferrer"
             >
               <button className="hover:shadow-lg border-ais-indigo border-2 text-ais-indigo font-bold py-2 rounded-lg text-xs w-20 2xl:w-28">
@@ -162,7 +162,7 @@ export default function JoinPage() {
           </div>
         </section>
         <section className="h-auto bg-[url('../../public/background.png')] bg-cover bg-center w-full">
-          <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-2">
+          <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-5xl 2xl:max-w-6xl py-2">
             <div className="text-2xl font-bold text-center pt-10 pb-4"><DescriptionIcon className="pb-2" fontSize="large"/>Applications</div>
             <div>{appDivs}</div>
             <img className="md:py-4 md:w-30 md:float-left md:-translate-x-4 md:-translate-y-32 hidden md:block" src="/supertoroid.png" alt="supertoroid" width="150"/>
