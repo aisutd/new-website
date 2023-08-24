@@ -59,7 +59,7 @@ module.exports = {
         },
         {
           source: '/aim/mentor-apply',
-          destination: '/',
+          destination: 'https://docs.google.com/forms/d/e/1FAIpQLScR6YrTT1xPIKTvlQUqBPrMPuctEuxHVcIlmhYYcsGIwEiMBA/viewform',
           basePath: false,
           permanent: true,
         },
