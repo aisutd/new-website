@@ -69,7 +69,7 @@ function Partners() {
                 flexDirection: "column",
                 alignItems: "center"
             }}>
-                <div className="text-ais-navy text-3xl font-bold mb-6 mt-8">HackAI '23 Sponsors</div>
+                <div className="text-ais-navy text-3xl font-bold mb-6 mt-8">HackAI {'\''}23 Sponsors</div>
             </Box>
             <Box sx={{
                 display: "flex",
