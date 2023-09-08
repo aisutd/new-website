@@ -42,10 +42,10 @@ export default function TeamPage({ officers }: TeamPageProps) {
     else if (off['team'] == 'Marketing') marketingTeam.push(off);
     else if (off['team'] == 'Operations') operationsTeam.push(off);
     else if (off['team'] == 'Finance') financeTeam.push(off);
-    else if (off['team'] == 'Human Resources') hrTeam.push(off);
+    else if (off['team'] == 'Membership') hrTeam.push(off);
     else if (off['team'] == 'Technology') techTeam.push(off);
     else if (off['team'] == 'AIM') aimTeam.push(off);
-    else if (off['team'] == 'Outreach') outreachTeam.push(off);
+    else if (off['team'] == 'Ex-Outreach') outreachTeam.push(off);
   };
 
   return (
@@ -93,25 +93,23 @@ export default function TeamPage({ officers }: TeamPageProps) {
         <section id="officers">
           <div className="flex flex-grow flex-wrap -mt-10 mx-20 pb-8 gap-8 justify-around">
             <TabContext value={value}>
-              <Tabs value={value} onChange={handleChange} variant="scrollable" defaultValue={"All Members"} aria-label="teams" scrollButtons={true} centered>
+              <Tabs value={value} onChange={handleChange} defaultValue={"All Members"} aria-label="teams" scrollButtons={true} centered>
                 <Tab value="All Members" label="All" />
                 <Tab value="Executive Members" label="Executive" />
-                <Tab value="Human Resources Members" label="HR" />
+                <Tab value="Membership Members" label="Membership" />
                 <Tab value="Operation Members" label="Operations" />
                 <Tab value="Finance Members" label="Finance" />
                 <Tab value="Technology Members" label="Technology" />
                 <Tab value="Marketing Members" label="Marketing" />
-                <Tab value="Outreach Members" label="Outreach" />   
                 <Tab value="Industry Members" label="Industry" />
                 <Tab value="AIM Members" label="AIM" />
               </Tabs> 
               <TabPanel value="All Members">
                 <TeamItem officers={execTeam} team={'Executive'} />
-                <TeamItem officers={hrTeam} team={'Human Resources'} />
+                <TeamItem officers={hrTeam} team={'Membership'} />
                 <TeamItem officers={operationsTeam} team={'Operations'} />
                 <TeamItem officers={financeTeam} team={'Finance'} />
                 <TeamItem officers={techTeam} team={'Technology'} />
-                <TeamItem officers={outreachTeam} team={'Outreach'} />
                 <TeamItem officers={marketingTeam} team={'Marketing'} />
                 <TeamItem officers={industryTeam} team={'Industry'} />
                 <TeamItem officers={aimTeam} team={'AIM'} />
@@ -119,8 +117,8 @@ export default function TeamPage({ officers }: TeamPageProps) {
               <TabPanel value="Executive Members">
                 <TeamItem officers={execTeam} team={'Executive'} />
               </TabPanel>
-              <TabPanel value="Human Resources Members">
-                <TeamItem officers={hrTeam} team={'Human Resources'} />
+              <TabPanel value="Membership Members">
+                <TeamItem officers={hrTeam} team={'Membership'} />
               </TabPanel>
               <TabPanel value="Operation Members">
                 <TeamItem officers={operationsTeam} team={'Operations'} />
@@ -133,9 +131,6 @@ export default function TeamPage({ officers }: TeamPageProps) {
               </TabPanel>
               <TabPanel value="Marketing Members">
                 <TeamItem officers={marketingTeam} team={'Marketing'} />
-              </TabPanel>
-              <TabPanel value="Outreach Members">
-                <TeamItem officers={outreachTeam} team={'Outreach'} />
               </TabPanel>
               <TabPanel value="Industry Members">
                 <TeamItem officers={industryTeam} team={'Industry'} />

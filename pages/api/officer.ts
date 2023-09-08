@@ -40,7 +40,7 @@ export const getAllOfficers = async (fields?: string[]): Promise<Officer[]> => {
     const CodaAPI = new Coda(process.env.CODA_OFFICER_API_KEY);
     // AIS Personnel Doc: zWBpla6LLN
     const doc = await CodaAPI.getDoc('zWBpla6LLN'); // Grab AIS Personnel Doc from Coda API using the Doc ID at https://coda.io/developers/apis/v1
-    const table = await doc.getTable('Officers 2023'); // Grab the actual table from the doc
+    const table = await doc.getTable('Officers Recordkeeping Table 2023'); // Grab the actual table from the doc
     const rows = await table.listRows({ useColumnNames: true, valueFormat: 'rich' }); // Grab all the officer entries in the doc
 
     for (let i = 0; i < rows.length; i++) {
@@ -48,7 +48,7 @@ export const getAllOfficers = async (fields?: string[]): Promise<Officer[]> => {
       let ofemail = rows[i].values['AIS Email'];
       let linkedIn = rows[i].values['LinkedIn'];
       let personal = rows[i].values['Personal Website'];
-      let imageUrl = rows[i].values['Headshot Photo (1:1 Aspect Ratio)'];
+      let imageUrl = rows[i].values['Headshot Photo (Square Aspect Ratio)'];
 
       // Data Cleaning and Verifying
       if (typeof ofemail == 'string')
@@ -87,17 +87,19 @@ export const getAllOfficers = async (fields?: string[]): Promise<Officer[]> => {
         personalWeb: personal,
         image: imageUrl,
         quote:
-          rows[i].values['Short Bio/Quote'].length != 0
-            ? rows[i].values['Short Bio/Quote'].replace(/```/gi, '')
+          rows[i].values['Quote for AIS Website'].length != 0
+            ? rows[i].values['Quote for AIS Website'].replace(/```/gi, '')
             : null,
       };
 
       OFFICERS_MAP[officer.name] = officer;
     }
     // Create an offline backup if necessary
-    //storeOfficers();
+    storeOfficers();
   } catch (error) {
-    // console.log(error);
+    console.log(error);
+    console.log('hi');
+    console.log('bye');
     console.log('Error No: ' + error.errno);
     console.log('Error Code: ' + error.code);
     console.log('!~could not get officer list from coda : (')
