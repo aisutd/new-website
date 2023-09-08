@@ -98,7 +98,6 @@ export const getAllOfficers = async (fields?: string[]): Promise<Officer[]> => {
     // Create an offline backup if necessary
     //storeOfficers();
   } catch (error) {
-    console.log('hi');
     console.log(error);
     console.log('Error No: ' + error.errno);
     console.log('Error Code: ' + error.code);
