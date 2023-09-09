@@ -3,7 +3,7 @@ module.exports = {
     return [
         {
           source: '/member/attendance',
-          destination: 'https://coda.io/form/Member-Attendance-Form_dEqbwI4W8O5',
+          destination: 'https://coda.io/form/AIS-Event-Attendance-Form_dVQqccTC16L',
           basePath: false,
           permanent: true,
         },
@@ -35,7 +35,7 @@ module.exports = {
         },
         {
           source: '/aim/info',
-          destination: 'https://docs.google.com/document/d/1i4GJzsLaxLYvmLwQsQOwaa5H3KxIqfvprCpW9cSw-JQ/edit?usp=sharing',
+          destination: 'https://docs.google.com/document/d/17CkhWdFdWq9dXzcr89jm_9y9HYVp4IauxA-LOzOUox4/edit',
           basePath: false,
           permanent: true,
         },
@@ -47,7 +47,7 @@ module.exports = {
         },
         {
           source: '/aim/apply',
-          destination: '/',
+          destination: 'https://docs.google.com/forms/d/e/1FAIpQLSd0YBWRzrll4ICjBtev0n7zF_EgnJ_TaQljoEvgIcBGsy5u5A/viewform',
           basePath: false,
           permanent: true,
         },
@@ -59,7 +59,7 @@ module.exports = {
         },
         {
           source: '/aim/mentor-apply',
-          destination: '/',
+          destination: 'https://docs.google.com/forms/d/e/1FAIpQLScR6YrTT1xPIKTvlQUqBPrMPuctEuxHVcIlmhYYcsGIwEiMBA/viewform',
           basePath: false,
           permanent: true,
         },
