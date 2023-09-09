@@ -27,8 +27,7 @@ export const getAllOfficers = async (fields?: string[]): Promise<Officer[]> => {
   if (prevOfficers.length != 0) {
     return Object.values(OFFICERS_MAP);
   }
-  try {
-    /**
+  /**
      * Coda API
      * How to get an API KEY:
      * 1. Go to https://coda.io/account and scroll down to "Coda API Tokens"
@@ -37,18 +36,20 @@ export const getAllOfficers = async (fields?: string[]): Promise<Officer[]> => {
      * 4. Add the following entry: "CODA_OFFICER_API_KEY='{Your API key}'"
      */
 
+  try {
     const CodaAPI = new Coda(process.env.CODA_OFFICER_API_KEY);
     // AIS Personnel Doc: zWBpla6LLN
     const doc = await CodaAPI.getDoc('zWBpla6LLN'); // Grab AIS Personnel Doc from Coda API using the Doc ID at https://coda.io/developers/apis/v1
-    const table = await doc.getTable('Officers 2023'); // Grab the actual table from the doc
+    const table = await doc.getTable('Officers Recordkeeping Table 2023'); // Grab the actual table from the doc
     const rows = await table.listRows({ useColumnNames: true, valueFormat: 'rich' }); // Grab all the officer entries in the doc
 
+    //
     for (let i = 0; i < rows.length; i++) {
       // For each officer in the table
       let ofemail = rows[i].values['AIS Email'];
       let linkedIn = rows[i].values['LinkedIn'];
       let personal = rows[i].values['Personal Website'];
-      let imageUrl = rows[i].values['Headshot Photo (1:1 Aspect Ratio)'];
+      let imageUrl = rows[i].values['Headshot Photo (Square Aspect Ratio)'];
 
       // Data Cleaning and Verifying
       if (typeof ofemail == 'string')
@@ -87,8 +88,8 @@ export const getAllOfficers = async (fields?: string[]): Promise<Officer[]> => {
         personalWeb: personal,
         image: imageUrl,
         quote:
-          rows[i].values['Short Bio/Quote'].length != 0
-            ? rows[i].values['Short Bio/Quote'].replace(/```/gi, '')
+          rows[i].values['Quote for AIS Website'].length != 0
+            ? rows[i].values['Quote for AIS Website'].replace(/```/gi, '')
             : null,
       };
 
@@ -97,13 +98,15 @@ export const getAllOfficers = async (fields?: string[]): Promise<Officer[]> => {
     // Create an offline backup if necessary
     //storeOfficers();
   } catch (error) {
-    // console.log(error);
+    console.log(error);
     console.log('Error No: ' + error.errno);
     console.log('Error Code: ' + error.code);
     console.log('!~could not get officer list from coda : (')
     // Restore from an offline backup if necessary
     retrieveOfficers();
   }
+  
+  retrieveOfficers();
   return Object.values(OFFICERS_MAP);
 };
 
